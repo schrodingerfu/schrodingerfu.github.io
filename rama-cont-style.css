@@ -1,0 +1,18 @@
+body#aa {
+        margin:0 auto;
+        width:800px;}
+
+body#bb {
+        margin:0 auto;
+        width:800px;
+        font-family:georgia,sans-serif,symbol;}
+
+body#cc {
+        margin:0 auto;
+        width:800px;
+        font-family:menlo-regular;}
+
+body#dd {
+        margin:0 auto;
+        width:800px;
+        font-size:121%;}
