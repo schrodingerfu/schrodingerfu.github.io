@@ -16,3 +16,6 @@ body#dd {
         margin:0 auto;
         width:800px;
         font-size:121%;}
+
+a:link {
+        text-decoration: none;}
