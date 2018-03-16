@@ -19,3 +19,6 @@ body#dd {
 
 a:link {
         text-decoration: none;}
+
+a:visited {
+        color: #0000FF}
