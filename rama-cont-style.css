@@ -5,17 +5,12 @@ body#aa {
 body#bb {
         margin:0 auto;
         width:800px;
-        font-family:georgia,sans-serif,symbol;}
-
-body#cc {
-        margin:0 auto;
-        width:800px;
-        font-family:menlo-regular;}
-
-body#dd {
-        margin:0 auto;
-        width:800px;
+        font-family:georgia,sans-serif,symbol;
         font-size:121%;}
+
+table   {
+        border:0;
+        width:735px;}
 
 a:link {
         color: #0000FF;
@@ -24,8 +19,14 @@ a:link {
 a:visited {
         color: #0000FF;}
 
-@media screen and (max-device-width: 2000px) {
+
+@media screen and (max-device-width: 960px) {
+
 body#aa {
         margin:0 auto;
-        width:auto;}
+        width:960px;}
+
+table   {
+        border:0;
+        width:960px;}
 }
