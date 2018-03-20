@@ -20,7 +20,7 @@ a:visited {
         color: #0000FF;}
 
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1125px) { /* iPhone X 的分辨率为: 2435×1125 */
 
 body#aa {
         margin:0 auto;
