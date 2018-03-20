@@ -23,3 +23,9 @@ a:link {
 
 a:visited {
         color: #0000FF;}
+
+@media screen and (max-device-width: 2000px) {
+body#aa {
+        margin:0 auto;
+        width:auto;}
+}
