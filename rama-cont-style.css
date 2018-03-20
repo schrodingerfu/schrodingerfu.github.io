@@ -1,16 +1,16 @@
 body#aa {
         margin:0 auto;
-        width:600px;}
+        width:640px;}
 
 body#bb {
         margin:0 auto;
-        width:800px;
+        width:768px;
         font-family:georgia,sans-serif,symbol;
         font-size:121%;}
 
 table   {
         border:0;
-        width:735px;}
+        width:715px;}
 
 a:link {
         color: #0000FF;
@@ -20,7 +20,7 @@ a:visited {
         color: #0000FF;}
 
 
-@media screen and (max-device-width: 960px) {
+@media screen and (max-device-width: 1024px) {
 
 body#aa {
         margin:0 auto;
@@ -28,5 +28,5 @@ body#aa {
 
 table   {
         border:0;
-        width:960px;}
+        width:auto;}
 }
