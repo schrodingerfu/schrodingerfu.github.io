@@ -1,8 +1,9 @@
 /* 来源：https://blog.csdn.net/weixin_35467885/article/details/80778992 */
 /* iPhone 12 Pro Max 的分辨率：1284×2778 */
+/* MacBook Pro 2014  的分辨率：2560×1600 */
 /* ThinkPad T470p    的分辨率：1920×1080 */
 
-@media screen and (max-width: 1284px){
+@media screen and (max-width: 1280px){
     /* 手机端CSS代码 */
     body    {
             margin:0 auto;
@@ -20,7 +21,7 @@
             color: #0000FF;}
 }
  
-@media screen and (min-width: 1284px){
+@media screen and (min-width: 1280px){
     /* 电脑端CSS代码 */
     body    {
             margin:0 auto;
