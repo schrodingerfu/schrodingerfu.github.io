@@ -1,32 +1,39 @@
-body#aa {
-        margin:0 auto;
-        width:640px;}
+/* 来源：https://blog.csdn.net/weixin_35467885/article/details/80778992 */
+/* iPhone 12 Pro Max 的分辨率：1284×2778 */
+/* ThinkPad T470p    的分辨率：1920×1080 */
 
-body#bb {
-        margin:0 auto;
-        width:768px;
-        font-family:georgia,sans-serif,symbol;
-        font-size:121%;}
+@media screen and (max-width: 1600px){
+    /* 手机端CSS代码 */
+    body    {
+            margin:0 auto;
+            width:auto;}
 
-table   {
-        border:0;
-        width:640px;}
+    table   {
+            border:0;
+            width:auto;}
 
-a:link {
-        color: #0000FF;
-        text-decoration: none;}
+    a:link  {
+            color: #0000FF;
+            text-decoration: none;}
 
-a:visited {
-        color: #0000FF;}
+    a:visited {
+            color: #0000FF;}
+}
+ 
+@media screen and (min-width: 1600px){
+    /* 电脑端CSS代码 */
+    body    {
+            margin:0 auto;
+            width:640px;}
 
+    table   {
+            border:0;
+            width:640px;}
 
-@media screen and (max-device-width: 1125px) { /* iPhone X 的分辨率为: 2435×1125 */
+    a:link  {
+            color: #0000FF;
+            text-decoration: none;}
 
-body#aa {
-        margin:0 auto;
-        width:960px;}
-
-table   {
-        border:0;
-        width:auto;}
+    a:visited {
+            color: #0000FF;}
 }
