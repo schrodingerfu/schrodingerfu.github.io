@@ -2,7 +2,7 @@
 /* iPhone 12 Pro Max 的分辨率：1284×2778 */
 /* ThinkPad T470p    的分辨率：1920×1080 */
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1284px){
     /* 手机端CSS代码 */
     body    {
             margin:0 auto;
@@ -20,7 +20,7 @@
             color: #0000FF;}
 }
  
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1284px){
     /* 电脑端CSS代码 */
     body    {
             margin:0 auto;
