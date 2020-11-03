@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robert Jianping Fu | Classification of Finance</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <link rel="stylesheet" href="../rama-cont-style.css" type="text/css" />
+
+    <script type="text/javascript">
+        window.onload=function(){
+            var canvas=document.getElementById('myCanvas');
+            canvas.width=640;
+            canvas.height=525;
+            var myContext=canvas.getContext('2d');
+            myContext.font="16px Arial";
+            myContext.fillStyle="#000000";
+            
+            
+            myContext.fillText("第一种分法：",0,30);
+            myContext.translate(0,60);
+            
+            var stepSize=68;
+            
+            var txt1="金融学";
+            var txtWidth1=myContext.measureText(txt1).width;
+            var X1=2*txtWidth1/3;
+            var Y1=75;
+            myContext.fillText(txt1,X1,Y1);
+            myContext.moveTo(X1+txtWidth1+5+stepSize,Y1-5-stepSize/2);
+            myContext.lineTo(X1+txtWidth1+5,         Y1-5);
+            myContext.lineTo(X1+txtWidth1+5+stepSize,Y1-5+stepSize/2);
+            
+            var txt2="宏观金融学 (F. Mishkin)";
+            var X2=X1+txtWidth1+stepSize+10;
+            var Y2=Y1-stepSize/2;
+            myContext.fillStyle="#0000ff";
+            myContext.fillText(txt2,X2,Y2);
+            myContext.fillStyle="#000000";
+            
+            var txt3="微观金融学";
+            var txtWidth3=myContext.measureText(txt3).width;
+            var X3=X1+txtWidth1+stepSize+10;
+            var Y3=Y1+stepSize/2;
+            myContext.fillText(txt3,X3,Y3);
+            myContext.moveTo(X3+txtWidth3+5+stepSize,Y3-5-stepSize/2);
+            myContext.lineTo(X3+txtWidth3+5,         Y3-5);
+            myContext.lineTo(X3+txtWidth3+5+stepSize,Y3-5+stepSize/2);
+            
+            var txt4="投资学";
+            var txtWidth4=myContext.measureText(txt4).width;
+            var X4=X3+txtWidth3+stepSize+10;
+            var Y4=Y3-stepSize/2;
+            myContext.fillText(txt4,X4,Y4);
+            myContext.moveTo(X4+txtWidth4+5+stepSize,Y4-5-stepSize/2);
+            myContext.lineTo(X4+txtWidth4+5,         Y4-5);
+            myContext.lineTo(X4+txtWidth4+5+stepSize,Y4-5+stepSize/2);
+            
+            var txt5="公司金融 (S. Ross)";
+            var X5=X3+txtWidth3+stepSize+10;
+            var Y5=Y3+stepSize/2;
+            myContext.fillText(txt5,X5,Y5);
+            
+            var txt6="绝对资产定价 (J. Cochrane)";
+            var X6=X4+txtWidth4+stepSize+10;
+            var Y6=Y4-stepSize/2;
+            myContext.fillText(txt6,X6,Y6);
+            
+            var txt7="相对资产定价 (J. Hull)";
+            var X7=X4+txtWidth4+stepSize+10;
+            var Y7=Y4+stepSize/2;
+            myContext.fillText(txt7,X7,Y7);
+            
+            
+            
+            myContext.translate(0,210);
+            myContext.fillText("第二种分法：",0,30);
+            myContext.translate(0,60);
+            
+            
+            
+            var middlePointX=canvas.width/2;//初始位置
+            var rectWidth=120;
+            var rectHeight=50;
+            myContext.rect(middlePointX-rectWidth/2,0,rectWidth,rectHeight);//绘制矩形
+            
+            var txt01="金 融 市 场";
+            var txt02="(资产定价)";
+            var txtWidth01=myContext.measureText(txt01).width;
+            var txtWidth02=myContext.measureText(txt02).width;
+            var x0 =middlePointX;
+            var y01=rectHeight/2;
+            var y02=y01+30;
+            myContext.fillText(txt01,x0-txtWidth01/2,y01-5);
+            myContext.fillText(txt02,x0-txtWidth02/2,y02-11);
+            
+            var stepWidth=120;
+            var y11=rectHeight+90;
+            var y12=y11+30;
+            
+            var txt11="财 政 部";
+            var txtWidth11=myContext.measureText(txt11).width;
+            var x11=x0-2*stepWidth;
+            myContext.fillText(txt11,x11-txtWidth11/2,y11-3);
+            
+            myContext.moveTo(middlePointX,rectHeight);
+            myContext.lineTo(x11,y11-20);
+            
+            var txt21="中 央 银 行";
+            var txt22="(货币金融)";
+            var txtWidth21=myContext.measureText(txt21).width;
+            var txtWidth22=myContext.measureText(txt22).width;
+            var x21=x0-stepWidth;
+            myContext.fillStyle="#0000ff";
+            myContext.fillText(txt21,x21-txtWidth21/2,y11-3);
+            myContext.fillText(txt22,x21-txtWidth22/2,y12-9);
+            myContext.fillStyle="#000000";
+            
+            myContext.moveTo(middlePointX,rectHeight);
+            myContext.lineTo(x21,y11-20);
+            
+            var txt51="金 融 机 构";
+            var txt52="(资产定价)";
+            var txtWidth51=myContext.measureText(txt51).width;
+            var txtWidth52=myContext.measureText(txt52).width;
+            var x51=x0;
+            myContext.fillText(txt51,x51-txtWidth51/2,y11-3);
+            myContext.fillText(txt52,x51-txtWidth52/2,y12-9);
+            
+            myContext.moveTo(middlePointX,rectHeight);
+            myContext.lineTo(x51,y11-20);
+            
+            var txt31="企  业";
+            var txt32="(公司金融)";
+            var txtWidth31=myContext.measureText(txt31).width;
+            var txtWidth32=myContext.measureText(txt32).width;
+            var x31=x0+stepWidth;
+            myContext.fillText(txt31,x31-txtWidth31/2,y11-3);
+            myContext.fillText(txt32,x31-txtWidth32/2,y12-9);
+            
+            myContext.moveTo(middlePointX,rectHeight);
+            myContext.lineTo(x31,y11-20);
+            
+            var txt41="家  庭";
+            var txtWidth41=myContext.measureText(txt41).width;
+            var x41=x0+2*stepWidth;
+            myContext.fillText(txt41,x41-txtWidth41/2,y11-3);
+            
+            myContext.moveTo(middlePointX,rectHeight);
+            myContext.lineTo(x41,y11-20);
+            
+            myContext.stroke();
+        }
+    </script>
+</head>
+
+<body style="text-align:center">
+    
+    <h2>金融学的两种分类</h2>
+
+    <canvas id="myCanvas" width="640" height="600" style="border:1px solid #c3c3c3;"></canvas>
+
+</body>
+</html>
