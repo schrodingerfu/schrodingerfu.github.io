@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== 在这里改成你自己的信息（浏览器标签页标题） ===== -->
+<title>张明远 Mingyuan Zhang | 个人学术主页</title>
+<meta name="description" content="张明远，江城大学计算机科学与技术学院教授，研究方向为机器学习、数据挖掘与人工智能应用。">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span data-lang="zh">张明远</span><span data-lang="en">M. Zhang</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav-link"><span data-lang="zh">关于我</span><span data-lang="en">About</span></a>
+      <a href="#publications" class="nav-link"><span data-lang="zh">论文发表</span><span data-lang="en">Publications</span></a>
+      <a href="#teaching" class="nav-link"><span data-lang="zh">教学课程</span><span data-lang="en">Teaching</span></a>
+      <a href="#interests" class="nav-link"><span data-lang="zh">兴趣爱好</span><span data-lang="en">Interests</span></a>
+      <a href="#contact" class="nav-link"><span data-lang="zh">联系</span><span data-lang="en">Contact</span></a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span class="ls-on" data-lang="zh">中</span><span class="ls-on" data-lang="en">EN</span>
+        <span class="ls-off" data-lang="zh">/ EN</span><span class="ls-off" data-lang="en">/ 中</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 首屏 / Hero ============ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <!-- 头像：把 assets/img/avatar.svg 换成你自己的照片（同名覆盖即可） -->
+    <div class="avatar-wrap">
+      <img class="avatar" src="assets/img/avatar.svg" alt="个人照片">
+    </div>
+
+    <div class="hero-text">
+      <p class="eyebrow">
+        <span data-lang="zh">江城大学 · 计算机科学与技术学院</span>
+        <span data-lang="en">School of Computer Science, Jiangcheng University</span>
+      </p>
+      <h1 class="hero-name">
+        <span data-lang="zh">张明远</span><span data-lang="en">Mingyuan Zhang</span>
+      </h1>
+      <p class="hero-title">
+        <span data-lang="zh">教授 · 博士生导师</span><span data-lang="en">Professor · PhD Supervisor</span>
+      </p>
+
+      <p class="hero-bio">
+        <span data-lang="zh">我的研究聚焦于机器学习与数据挖掘，尤其是开放环境下的鲁棒表征学习与可解释推荐系统。研究成果应用于智慧教育与科学文献理解等场景，累计发表论文 60 余篇，主持国家自然科学基金项目 3 项。</span>
+        <span data-lang="en">My research focuses on machine learning and data mining, especially robust representation learning in open environments and explainable recommender systems. The work has been applied in smart education and scientific literature understanding, with 60+ publications and 3 NSFC grants as PI.</span>
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:zhangmingyuan@example.edu.cn">
+          <span data-lang="zh">给我发邮件</span><span data-lang="en">Email Me</span>
+        </a>
+        <a class="btn" href="assets/files/cv.pdf" target="_blank" rel="noopener">
+          <span data-lang="zh">下载简历 (PDF)</span><span data-lang="en">CV (PDF)</span>
+        </a>
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn btn-ghost" href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于我 + 研究兴趣 ============ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">关于我</span><span data-lang="en">About Me</span></h2>
+      <p class="section-sub"><span data-lang="zh">Research &amp; Background</span><span data-lang="en">Research &amp; Background</span></p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <span data-lang="zh">我于 2012 年在清华大学获得计算机科学与技术博士学位，2012—2015 年在新加坡国立大学从事博士后研究，2015 年加入江城大学，2019 年破格晋升教授。目前担任学院副院长、校学术委员会委员。</span>
+        <span data-lang="en">I received my PhD in Computer Science from Tsinghua University in 2012, worked as a postdoctoral researcher at the National University of Singapore (2012–2015), and joined Jiangcheng University in 2015, where I was promoted to full professor in 2019. I currently serve as vice dean of the school and a member of the university academic committee.</span>
+      </p>
+      <p>
+        <span data-lang="zh">我的研究强调「方法可解释、结果可复现」。近年来主要关注模型在分布偏移与长尾数据下的可靠性问题，并尝试把因果推断引入推荐与决策系统。我也长期参与人工智能通识课程建设，希望让非计算机专业的学生同样具备数据与算法素养。</span>
+        <span data-lang="en">My research emphasizes interpretable methods and reproducible results. Recent work focuses on model reliability under distribution shift and long-tailed data, and introduces causal inference into recommendation and decision systems. I also contribute to AI general-education curricula, aiming to build data and algorithmic literacy for students outside computer science.</span>
+      </p>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">研究兴趣</span><span data-lang="en">Research Interests</span></h3>
+
+    <div class="cards">
+      <article class="card">
+        <h4><span data-lang="zh">机器学习与表征学习</span><span data-lang="en">Machine Learning &amp; Representation Learning</span></h4>
+        <p><span data-lang="zh">面向开放环境的鲁棒表征、自监督预训练、分布外泛化。</span><span data-lang="en">Robust representations for open environments, self-supervised pre-training, out-of-distribution generalization.</span></p>
+      </article>
+      <article class="card">
+        <h4><span data-lang="zh">数据挖掘与推荐系统</span><span data-lang="en">Data Mining &amp; Recommender Systems</span></h4>
+        <p><span data-lang="zh">可解释推荐、因果推断与反事实评估、序列行为建模。</span><span data-lang="en">Explainable recommendation, causal inference and counterfactual evaluation, sequential behavior modeling.</span></p>
+      </article>
+      <article class="card">
+        <h4><span data-lang="zh">人工智能教育应用</span><span data-lang="en">AI for Education</span></h4>
+        <p><span data-lang="zh">知识追踪、学习者画像、自适应练习与教学资源推荐。</span><span data-lang="en">Knowledge tracing, learner profiling, adaptive exercise and resource recommendation.</span></p>
+      </article>
+      <article class="card">
+        <h4><span data-lang="zh">科学文献智能理解</span><span data-lang="en">Scientific Document Understanding</span></h4>
+        <p><span data-lang="zh">多模态大模型的文献解析、公式与图表抽取、学术知识图谱构建。</span><span data-lang="en">Multimodal LLM-based document parsing, formula and figure extraction, academic knowledge graph construction.</span></p>
+      </article>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">关键词</span><span data-lang="en">Keywords</span></h3>
+    <div class="chips">
+      <span class="chip">机器学习</span><span class="chip">Machine Learning</span>
+      <span class="chip">数据挖掘</span><span class="chip">Data Mining</span>
+      <span class="chip">因果推断</span><span class="chip">Causal Inference</span>
+      <span class="chip">推荐系统</span><span class="chip">Recommender Systems</span>
+      <span class="chip">多模态大模型</span><span class="chip">Multimodal LLMs</span>
+      <span class="chip">智慧教育</span><span class="chip">AI in Education</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 论文发表 ============ -->
+<section id="publications" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">论文发表</span><span data-lang="en">Publications</span></h2>
+      <p class="section-sub"><span data-lang="zh">代表性成果 · 完整列表见 Google Scholar</span><span data-lang="en">Selected papers · Full list on Google Scholar</span></p>
+    </div>
+
+    <div class="filters" id="pubFilters">
+      <button class="filter is-active" data-filter="all"><span data-lang="zh">全部</span><span data-lang="en">All</span></button>
+      <button class="filter" data-filter="journal"><span data-lang="zh">期刊论文</span><span data-lang="en">Journal</span></button>
+      <button class="filter" data-filter="conference"><span data-lang="zh">会议论文</span><span data-lang="en">Conference</span></button>
+      <button class="filter" data-filter="cn"><span data-lang="zh">中文期刊</span><span data-lang="en">Chinese</span></button>
+    </div>
+
+    <ol class="pub-list" id="pubList">
+
+      <li class="pub" data-type="journal">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h3 class="pub-title">
+            <span data-lang="zh">面向开放环境的鲁棒视觉表征学习</span>
+            <span data-lang="en">Robust Visual Representation Learning in Open Environments</span>
+          </h3>
+          <p class="pub-authors"><strong>M. Zhang</strong>, L. Chen, Y. Wang</p>
+          <p class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 48(3), 2026.</p>
+          <div class="pub-links">
+            <a href="#">PDF</a><a href="https://doi.org/10.xxxx/xxxxx">DOI</a><a href="#">Code</a>
+            <details><summary>BibTeX</summary><pre>@article{zhang2026robust,
+  title   = {Robust Visual Representation Learning in Open Environments},
+  author  = {Zhang, Mingyuan and Chen, Lin and Wang, Yao},
+  journal = {IEEE TPAMI},
+  year    = {2026}
+}</pre></details>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="conference">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <h3 class="pub-title">
+            <span data-lang="zh">基于因果推断的可解释推荐方法</span>
+            <span data-lang="en">Causal Inference for Explainable Recommendation</span>
+          </h3>
+          <p class="pub-authors">X. Liu, <strong>M. Zhang</strong>, R. Gupta</p>
+          <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2025.</p>
+          <div class="pub-links">
+            <a href="#">PDF</a><a href="https://doi.org/10.xxxx/xxxxx">DOI</a><a href="#">Code</a>
+            <details><summary>BibTeX</summary><pre>@inproceedings{liu2025causal,
+  title     = {Causal Inference for Explainable Recommendation},
+  author    = {Liu, Xiaoyu and Zhang, Mingyuan and Gupta, Rahul},
+  booktitle = {NeurIPS},
+  year      = {2025}
+}</pre></details>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="conference">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3 class="pub-title">
+            <span data-lang="zh">长尾分布下的图神经网络训练方法</span>
+            <span data-lang="en">Training Graph Neural Networks under Long-Tailed Distributions</span>
+          </h3>
+          <p class="pub-authors">Y. Wang, <strong>M. Zhang</strong></p>
+          <p class="pub-venue">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2024.</p>
+          <div class="pub-links">
+            <a href="#">PDF</a><a href="https://doi.org/10.xxxx/xxxxx">DOI</a><a href="#">Code</a>
+            <details><summary>BibTeX</summary><pre>@inproceedings{wang2024ltgnn,
+  title     = {Training Graph Neural Networks under Long-Tailed Distributions},
+  author    = {Wang, Yao and Zhang, Mingyuan},
+  booktitle = {KDD},
+  year      = {2024}
+}</pre></details>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="journal">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3 class="pub-title">
+            <span data-lang="zh">多模态大模型在科学文献理解中的能力评测</span>
+            <span data-lang="en">Benchmarking Multimodal LLMs for Scientific Document Understanding</span>
+          </h3>
+          <p class="pub-authors">L. Chen, <strong>M. Zhang</strong>, H. Zhao</p>
+          <p class="pub-venue">IEEE Transactions on Knowledge and Data Engineering (TKDE), 36(11), 2024.</p>
+          <div class="pub-links">
+            <a href="#">PDF</a><a href="https://doi.org/10.xxxx/xxxxx">DOI</a><a href="#">Code</a>
+            <details><summary>BibTeX</summary><pre>@article{chen2024bench,
+  title   = {Benchmarking Multimodal LLMs for Scientific Document Understanding},
+  author  = {Chen, Lin and Zhang, Mingyuan and Zhao, Hua},
+  journal = {IEEE TKDE},
+  year    = {2024}
+}</pre></details>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub" data-type="cn">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <h3 class="pub-title">
+            <span data-lang="zh">面向智慧教育的知识追踪模型研究综述</span>
+            <span data-lang="en">A Survey of Knowledge Tracing Models for Smart Education</span>
+          </h3>
+          <p class="pub-authors"><strong>张明远</strong>, 陈琳, 王垚</p>
+          <p class="pub-venue">软件学报, 34(9), 2023.（CCF A 中文期刊）</p>
+          <div class="pub-links">
+            <a href="#">PDF</a><a href="https://doi.org/10.xxxx/xxxxx">DOI</a>
+            <details><summary>BibTeX</summary><pre>@article{zhang2023kt,
+  title   = {面向智慧教育的知识追踪模型研究综述},
+  author  = {张明远 and 陈琳 and 王垚},
+  journal = {软件学报},
+  year    = {2023}
+}</pre></details>
+          </div>
+        </div>
+      </li>
+
+    </ol>
+
+    <p class="more">
+      <span data-lang="zh">完整论文列表请见：</span><span data-lang="en">Full publication list:</span>
+      <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a> ·
+      <a href="https://dblp.org/pid/YOUR_ID" target="_blank" rel="noopener">DBLP</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 教学课程 ============ -->
+<section id="teaching" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">教学课程</span><span data-lang="en">Teaching</span></h2>
+      <p class="section-sub"><span data-lang="zh">主讲课程与教学资源</span><span data-lang="en">Courses &amp; Materials</span></p>
+    </div>
+
+    <div class="cards cards-2">
+
+      <article class="card course">
+        <div class="course-top">
+          <h4><span data-lang="zh">机器学习导论</span><span data-lang="en">Introduction to Machine Learning</span></h4>
+          <span class="tag">CS301 · 3 学分</span>
+        </div>
+        <p class="course-meta"><span data-lang="zh">本科三年级 · 秋季学期 · 64 学时</span><span data-lang="en">Junior Undergraduate · Fall · 64 hours</span></p>
+        <p><span data-lang="zh">系统讲授监督学习、无监督学习与模型评估方法，含 6 次编程作业与一个期末课程项目。</span><span data-lang="en">Covers supervised/unsupervised learning and model evaluation, with six programming assignments and a final course project.</span></p>
+        <div class="pub-links">
+          <a href="#">教学大纲</a><a href="#">课件</a><a href="#">课程主页</a>
+        </div>
+      </article>
+
+      <article class="card course">
+        <div class="course-top">
+          <h4><span data-lang="zh">数据挖掘与知识发现</span><span data-lang="en">Data Mining &amp; Knowledge Discovery</span></h4>
+          <span class="tag">CS405 · 3 学分</span>
+        </div>
+        <p class="course-meta"><span data-lang="zh">本科四年级 / 研究生 · 春季学期 · 48 学时</span><span data-lang="en">Senior / Graduate · Spring · 48 hours</span></p>
+        <p><span data-lang="zh">围绕聚类、关联分析、图挖掘与推荐系统展开，结合真实数据集完成一份完整的数据分析报告。</span><span data-lang="en">Clustering, association analysis, graph mining and recommender systems, with a full data-analysis report on real datasets.</span></p>
+        <div class="pub-links">
+          <a href="#">教学大纲</a><a href="#">课件</a><a href="#">数据集</a>
+        </div>
+      </article>
+
+      <article class="card course">
+        <div class="course-top">
+          <h4><span data-lang="zh">人工智能通识</span><span data-lang="en">AI Literacy (General Education)</span></h4>
+          <span class="tag">GE102 · 2 学分</span>
+        </div>
+        <p class="course-meta"><span data-lang="zh">全校通识 · 春秋两季 · 32 学时</span><span data-lang="en">University-wide · Fall &amp; Spring · 32 hours</span></p>
+        <p><span data-lang="zh">面向非计算机专业学生，讨论算法伦理、数据素养与生成式 AI 的合理使用，无编程基础要求。</span><span data-lang="en">For non-CS students: algorithmic ethics, data literacy and responsible use of generative AI. No coding background required.</span></p>
+        <div class="pub-links">
+          <a href="#">教学大纲</a><a href="#">课件</a><a href="#">阅读清单</a>
+        </div>
+      </article>
+
+      <article class="card course">
+        <div class="course-top">
+          <h4><span data-lang="zh">学术论文写作与规范</span><span data-lang="en">Academic Writing &amp; Research Ethics</span></h4>
+          <span class="tag">GR601 · 2 学分</span>
+        </div>
+        <p class="course-meta"><span data-lang="zh">研究生必修 · 秋季学期 · 32 学时</span><span data-lang="en">Graduate (required) · Fall · 32 hours</span></p>
+        <p><span data-lang="zh">训练文献综述、实验设计与论文写作全流程，每位学生需在课程结束时完成一篇可投稿的英文论文初稿。</span><span data-lang="en">Trains literature review, experimental design and paper writing; each student completes a submission-ready English draft.</span></p>
+        <div class="pub-links">
+          <a href="#">教学大纲</a><a href="#">模板下载</a><a href="#">优秀范例</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 个人爱好和兴趣 ============ -->
+<section id="interests" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">个人爱好与兴趣</span><span data-lang="en">Interests &amp; Hobbies</span></h2>
+      <p class="section-sub"><span data-lang="zh">研究之外，我是一个这样的人</span><span data-lang="en">Beyond research, who I am</span></p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card hobby">
+        <div class="hobby-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13.5" r="3.4"/></svg>
+        </div>
+        <h4><span data-lang="zh">胶片摄影</span><span data-lang="en">Film Photography</span></h4>
+        <p><span data-lang="zh">用一台 1985 年的手动胶片机记录校园四季，偏爱清晨与雨天的散射光。每年整理一册《校园光景》摄影集。</span><span data-lang="en">Shooting campus seasons with a 1985 manual film camera; fond of early-morning and rainy-day light. I compile an annual photo book.</span></p>
+      </article>
+
+      <article class="card hobby">
+        <div class="hobby-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 19l6-9 4 5 2-3 6 7z"/><circle cx="17.5" cy="6.5" r="2.2"/></svg>
+        </div>
+        <h4><span data-lang="zh">徒步与登山</span><span data-lang="en">Hiking &amp; Mountaineering</span></h4>
+        <p><span data-lang="zh">几乎每个假期都在山里。已完成多条长线徒步路线，习惯在行走中构思论文框架——很多想法诞生于海拔两千米以上。</span><span data-lang="en">I spend most holidays in the mountains and have finished several long-distance trails. Many paper outlines were conceived above 2,000 meters.</span></p>
+      </article>
+
+      <article class="card hobby">
+        <div class="hobby-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l10-2v13"/><circle cx="6.5" cy="18" r="2.6"/><circle cx="16.5" cy="16" r="2.6"/></svg>
+        </div>
+        <h4><span data-lang="zh">古典音乐与黑胶收藏</span><span data-lang="en">Classical Music &amp; Vinyl</span></h4>
+        <p><span data-lang="zh">收藏约 400 张黑胶唱片，偏爱巴赫与马勒。写作时习惯放协奏曲，改论文时放无伴奏大提琴。</span><span data-lang="en">About 400 vinyl records, with a preference for Bach and Mahler. Concertos for writing; solo cello for revising papers.</span></p>
+      </article>
+
+      <article class="card hobby">
+        <div class="hobby-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h7v15H4z"/><path d="M13 5h7v15h-7z"/><path d="M11 5h2v15h-2z"/></svg>
+        </div>
+        <h4><span data-lang="zh">科普写作与书法</span><span data-lang="en">Popular Science &amp; Calligraphy</span></h4>
+        <p><span data-lang="zh">业余为科普专栏撰稿，尝试把机器学习讲给中学生听；每天临帖半小时，用来对抗屏幕时间。</span><span data-lang="en">I write popular-science columns explaining machine learning to middle-schoolers, and practice calligraphy half an hour daily to offset screen time.</span></p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系 / 招生 ============ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">联系与招生</span><span data-lang="en">Contact &amp; Openings</span></h2>
+      <p class="section-sub"><span data-lang="zh">欢迎有共同研究兴趣的同学联系我</span><span data-lang="en">Students with shared interests are welcome to reach out</span></p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <ul class="info-list">
+          <li><span class="k"><span data-lang="zh">邮箱</span><span data-lang="en">Email</span></span><span class="v"><a href="mailto:zhangmingyuan@example.edu.cn">zhangmingyuan@example.edu.cn</a></span></li>
+          <li><span class="k"><span data-lang="zh">办公室</span><span data-lang="en">Office</span></span><span class="v"><span data-lang="zh">信息科学楼 A 座 512 室</span><span data-lang="en">Room 512, Building A, Information Science Building</span></span></li>
+          <li><span class="k"><span data-lang="zh">办公时间</span><span data-lang="en">Office Hours</span></span><span class="v"><span data-lang="zh">每周三 14:00–16:00（建议邮件预约）</span><span data-lang="en">Wed 14:00–16:00 (appointment by email preferred)</span></span></li>
+          <li><span class="k"><span data-lang="zh">通信地址</span><span data-lang="en">Address</span></span><span class="v"><span data-lang="zh">江城市海淀区学院路 100 号，100084</span><span data-lang="en">100 Xueyuan Rd, Haidian, Jiangcheng 100084, China</span></span></li>
+        </ul>
+      </div>
+
+      <div class="contact-card">
+        <h4 class="recruit-title"><span data-lang="zh">招生说明</span><span data-lang="en">Prospective Students</span></h4>
+        <p><span data-lang="zh">每年招收硕士生 2–3 名、博士生 1 名，同时常年接收本科生参与科研训练。希望你具备扎实的数学基础、良好的编程能力，以及对问题本身的好奇心——这比履历上的任何一项都重要。</span><span data-lang="en">I recruit 2–3 master's and 1 PhD student per year, and welcome undergraduates for research training year-round. Solid math, decent coding and genuine curiosity about the problem matter more than anything on a CV.</span></p>
+        <p><span data-lang="zh">联系时请附上：个人简历、成绩单，以及一段说明你为什么对这个方向感兴趣的简短陈述（不超过一页）。</span><span data-lang="en">When contacting me, please attach your CV, transcript, and a one-page statement on why this direction interests you.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span>
+      <span data-lang="zh">张明远 · 保留所有权利</span><span data-lang="en">Mingyuan Zhang · All rights reserved</span>
+    </p>
+    <p class="footer-note">
+      <span data-lang="zh">本站由 GitHub Pages 托管 · 最后更新：2026 年 10 月</span>
+      <span data-lang="en">Hosted on GitHub Pages · Last updated: Oct 2026</span>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
