@@ -1,7 +1,7 @@
 # 课程资料目录
 
 课程页面：`courses/machine-learning.html`（CS301）、`courses/data-mining.html`（CS405）、
-`courses/ai-literacy.html`（GE102）
+`courses/ai-literacy.html`（GE102）、`courses/academic-writing.html`（GR601）
 
 把下列文件放到本目录（`assets/files/courses/`），课程页上的下载链接即可正常工作。
 文件不存在时链接会 404 —— 上传后请逐一点开验证一次。
@@ -50,5 +50,25 @@
 | `ge102-essay-template.pdf` | 资源与阅读 → 小论文模板 | 1500–2000 字论文模板 |
 | `ge102-sample-essays.pdf` | 资源与阅读 → 小论文模板 | 往届优秀作业 |
 | `ge102-media-list.pdf` | 资源与阅读 → 延伸材料 | 视频与播客清单 |
+
+## GR601 学术论文写作与规范
+
+| 文件名 | 对应课程页位置 | 说明 |
+| --- | --- | --- |
+| `gr601-syllabus.pdf` | 模板与资源 → 课程讲义 | 教学大纲 PDF |
+| `gr601-week01-08.pdf` | 模板与资源 → 课程讲义 | 第 1–8 周课件 |
+| `gr601-week09-16.pdf` | 模板与资源 → 课程讲义 | 第 9–16 周课件 |
+| `gr601-latex-template.zip` | 模板与资源 → 论文模板 | LaTeX 模板（含参考文献样式） |
+| `gr601-word-template.docx` | 模板与资源 → 论文模板 | Word 模板 |
+| `gr601-phrase-bank.pdf` | 模板与资源 → 短语库 | 按分节整理的学术句式 |
+| `gr601-style-guide.pdf` | 模板与资源 → 短语库 | 30 组中式表达改写对照 |
+| `gr601-sample-papers.zip` | 模板与资源 → 优秀范例 | 6 篇优秀论文 + 审稿意见原件 |
+| `gr601-annotated-draft.pdf` | 模板与资源 → 优秀范例 | 带批注的差稿对照 |
+| `gr601-venue-list.pdf` | 模板与资源 → 投稿指南 | 期刊/会议分级与截稿周期 |
+| `gr601-submission-checklist.pdf` | 模板与资源 → 投稿指南 | 投稿流程清单 |
+| `gr601-citation-guide.pdf` | 模板与资源 → 引用规范 | 引文格式速查 |
+| `gr601-ai-declaration.pdf` | 模板与资源 → 引用规范 | AI 使用声明模板 |
+| `gr601-zotero-guide.pdf` | 模板与资源 → 文献管理 | Zotero 安装与联动指南 |
+| `gr601-rebuttal-examples.pdf` | 模板与资源 → Rebuttal 范例 | 三份真实审稿回应 |
 
 不想提供某个文件？把课程页上对应的 `<a>` 标签删掉即可，留着空链接不如不放。
