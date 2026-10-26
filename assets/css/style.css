@@ -394,6 +394,19 @@ body.en [data-lang="zh"]{ display:none; }
 .state-todo{ color:var(--muted); background:transparent; }
 .hw-final{ background:var(--accent-bg); }
 
+/* 常见问题（折叠） */
+.faq{ border-top:1px solid var(--line); }
+.faq-item{ border-bottom:1px solid var(--line); padding:16px 4px; }
+.faq-item summary{
+  cursor:pointer; list-style:none; font-family:var(--serif); font-size:16.5px;
+  font-weight:600; color:var(--ink); user-select:none;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::before{ content:"＋ "; color:var(--accent); font-weight:700; }
+.faq-item[open] summary::before{ content:"－ "; }
+.faq-item summary:hover{ color:var(--accent); }
+.faq-item p{ font-size:14.5px; color:var(--ink-2); margin:10px 0 0 22px; max-width:76ch; }
+
 /* 教学团队 */
 .team{ display:flex; flex-direction:column; }
 .team-item{

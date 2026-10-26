@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>人工智能通识 GE102 | 张明远 · 课程主页</title>
+<meta name="description" content="人工智能通识（GE102）课程主页：面向全校非计算机专业学生，讨论数据素养、生成式 AI 的合理使用与算法伦理。无需编程基础。">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <span data-lang="zh">← 张明远</span><span data-lang="en">← M. Zhang</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#overview" class="nav-link"><span data-lang="zh">课程简介</span><span data-lang="en">Overview</span></a>
+      <a href="#schedule" class="nav-link"><span data-lang="zh">教学安排</span><span data-lang="en">Schedule</span></a>
+      <a href="#assessment" class="nav-link"><span data-lang="zh">作业与考核</span><span data-lang="en">Assessment</span></a>
+      <a href="#resources" class="nav-link"><span data-lang="zh">资源与阅读</span><span data-lang="en">Resources</span></a>
+      <a href="#policies" class="nav-link"><span data-lang="zh">课程政策</span><span data-lang="en">Policies</span></a>
+      <a href="#faq" class="nav-link"><span data-lang="zh">常见问题</span><span data-lang="en">FAQ</span></a>
+      <a href="../index.html#teaching" class="nav-link"><span data-lang="zh">返回主页</span><span data-lang="en">Home</span></a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span class="ls-on" data-lang="zh">中</span><span class="ls-on" data-lang="en">EN</span>
+        <span class="ls-off" data-lang="zh">/ EN</span><span class="ls-off" data-lang="en">/ 中</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 课程首屏 ============ -->
+<section class="hero hero-course">
+  <div class="container">
+    <p class="eyebrow">
+      <span data-lang="zh">江城大学 · 全校通识课 · 2026 秋季学期</span>
+      <span data-lang="en">Jiangcheng University · General Education · Fall 2026</span>
+    </p>
+
+    <h1 class="hero-name">
+      <span data-lang="zh">人工智能通识</span><span data-lang="en">AI Literacy</span>
+    </h1>
+
+    <p class="hero-title">GE102 ·
+      <span data-lang="zh">全校本科生 · 2 学分 · 32 学时</span>
+      <span data-lang="en">All Undergraduates · 2 Credits · 32 Hours</span>
+      <span class="tag" style="margin-left:10px"><span data-lang="zh">无需编程基础</span><span data-lang="en">No coding required</span></span>
+    </p>
+
+    <p class="hero-bio">
+      <span data-lang="zh">这门课不教你写代码，而是教你在一个人人都能用 AI 的时代里保持清醒：AI 到底能做到什么、做不到什么，你的数据是怎样被使用的，以及哪些判断不能交给机器。课程以案例和讨论为主，涵盖数据素养、生成式 AI 的正确用法、算法偏见、深度伪造与治理规则。</span>
+      <span data-lang="en">This course does not teach you to code. It teaches you to stay clear-eyed in an age when everyone can use AI: what AI can and cannot do, how your data is used, and which judgments should never be delegated to a machine. Case-based and discussion-driven, it covers data literacy, responsible use of generative AI, algorithmic bias, deepfakes and governance.</span>
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:zhangmingyuan@example.edu.cn">
+        <span data-lang="zh">联系授课教师</span><span data-lang="en">Contact Instructor</span>
+      </a>
+      <a class="btn" href="#schedule">
+        <span data-lang="zh">查看教学安排</span><span data-lang="en">Weekly Schedule</span>
+      </a>
+      <a class="btn btn-ghost" href="#faq">
+        <span data-lang="zh">这门课适合我吗</span><span data-lang="en">Is this for me?</span>
+      </a>
+    </div>
+
+    <!-- 课程基本信息 -->
+    <div class="course-meta-grid">
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">授课时间</span><span data-lang="en">Lectures</span></span>
+        <span class="meta-v"><span data-lang="zh">周三 19:00–20:40（2 学时）</span><span data-lang="en">Wed 19:00–20:40 (2 class hours)</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">授课地点</span><span data-lang="en">Location</span></span>
+        <span class="meta-v"><span data-lang="zh">公共教学楼 A101</span><span data-lang="en">General Teaching Bldg A101</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">面向对象</span><span data-lang="en">Audience</span></span>
+        <span class="meta-v"><span data-lang="zh">全校本科生，非计算机专业优先</span><span data-lang="en">All undergraduates; non-CS majors given priority</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">先修要求</span><span data-lang="en">Prerequisites</span></span>
+        <span class="meta-v"><span data-lang="zh">无。不需要数学或编程基础</span><span data-lang="en">None. No math or programming background needed</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">班级规模</span><span data-lang="en">Class Size</span></span>
+        <span class="meta-v"><span data-lang="zh">120 人 · 大班授课 + 课内分组讨论</span><span data-lang="en">120 students · Large lecture with in-class breakout discussion</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">课程平台</span><span data-lang="en">Platform</span></span>
+        <span class="meta-v"><span data-lang="zh">校内 Blackboard（作业提交与材料下载）</span><span data-lang="en">Blackboard (submissions and materials)</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程公告 ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程公告</span><span data-lang="en">Announcements</span></h2>
+    </div>
+
+    <div class="notice-list">
+      <article class="notice">
+        <time class="notice-date">2026-10-22</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">第 12 周改为 Guest Talk：邀请法学院教师谈 AI 与法律</span><span data-lang="en">Week 12 becomes a guest talk on AI and law</span></h4>
+          <p><span data-lang="zh">11 月 11 日的课将由法学院李教授主讲「生成式 AI 的版权与责任归属」，内容与第 13 周的法律法规单元衔接，请提前阅读发在 Blackboard 上的两篇材料。</span><span data-lang="en">The Nov 11 session will be a guest lecture by Prof. Li from the Law School on copyright and liability in generative AI, linking to the Week 13 policy unit. Please read the two materials posted on Blackboard beforehand.</span></p>
+        </div>
+      </article>
+
+      <article class="notice">
+        <time class="notice-date">2026-10-13</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">小组调研展示选题已开放登记</span><span data-lang="en">Group presentation topics now open for sign-up</span></h4>
+          <p><span data-lang="zh">3–4 人一组，从 15 个选题中挑选（也可自拟，需邮件确认）。登记截止 10 月 31 日，展示安排在第 15 周。选题清单见「资源与阅读」。</span><span data-lang="en">Teams of 3–4 pick from 15 topics (or propose your own by email). Sign-up closes Oct 31; presentations are in Week 15. The topic list is under Resources.</span></p>
+        </div>
+      </article>
+
+      <article class="notice">
+        <time class="notice-date">2026-09-16</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">课程开始 · 第一次课不需要带任何材料</span><span data-lang="en">Course begins · Nothing to bring on day one</span></h4>
+          <p><span data-lang="zh">第一次课为 9 月 16 日。课上会做一次小调查和一个现场演示，不涉及作业。教材《AI 3.0》建议在第 3 周前读完前两章即可。</span><span data-lang="en">The first lecture is Sep 16. It includes a short survey and a live demo — no assignment. For the textbook AI 3.0, finishing the first two chapters by Week 3 is enough.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程简介 ============ -->
+<section id="overview" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程简介</span><span data-lang="en">Course Overview</span></h2>
+      <p class="section-sub"><span data-lang="zh">这门课想带给你什么</span><span data-lang="en">What this course aims to give you</span></p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <span data-lang="zh">生成式 AI 已经把「会用工具」的门槛降到几乎为零，但同时把「判断该不该用、用得对不对」的门槛抬高了。这正是这门课存在的理由——它关心的不是模型怎么训练，而是你作为使用者、被影响者和未来的决策者，该如何与之相处。</span>
+        <span data-lang="en">Generative AI has pushed the cost of "using the tool" to nearly zero, while raising the bar for judging whether and how it should be used. That is the reason this course exists: it is not about how models are trained, but about how you — as a user, someone affected, and a future decision-maker — should live with them.</span>
+      </p>
+      <p>
+        <span data-lang="zh">课程分成三条线并行推进：一条是「能力线」，讲清 AI 的真实能力边界；一条是「数据线」，讲清你的数据如何被采集、推断和交易；一条是「社会线」，讨论偏见、深度伪造、职业冲击、版权与治理。每条线都从一个具体案例切入，而不是从概念开始。</span>
+        <span data-lang="en">Three threads run in parallel: a capability thread on what AI can actually do; a data thread on how your data is collected, inferred and traded; and a society thread on bias, deepfakes, labor impact, copyright and governance. Each starts from a concrete case rather than an abstract definition.</span>
+      </p>
+      <p>
+        <span data-lang="zh">我唯一想让你带走的习惯是：面对任何 AI 输出，先问三句话——它基于什么数据？它错了会怎样？这个判断该由人来做吗？</span>
+        <span data-lang="en">The one habit I want you to leave with: for any AI output, ask three questions — what data is it based on? What happens if it is wrong? Should a human be making this call?</span>
+      </p>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">学习目标</span><span data-lang="en">Learning Outcomes</span></h3>
+    <ol class="outcome-list">
+      <li><span data-lang="zh">能够用通俗语言解释机器学习与生成式 AI 的基本工作原理，并说清其能力边界。</span><span data-lang="en">Explain in plain language how machine learning and generative AI work, and where their limits are.</span></li>
+      <li><span data-lang="zh">能够判断一个具体任务是否适合交给 AI，并写出有效的提示词、核验输出结果。</span><span data-lang="en">Decide whether a concrete task should be delegated to AI, write effective prompts, and verify outputs.</span></li>
+      <li><span data-lang="zh">能够识别算法偏见、数据滥用与深度伪造的现实案例，并说明其社会后果。</span><span data-lang="en">Recognize real cases of algorithmic bias, data misuse and deepfakes, and explain their social consequences.</span></li>
+      <li><span data-lang="zh">能够读懂人工智能相关的法律法规与政策文件，了解自身的权利与义务。</span><span data-lang="en">Read AI-related laws and policy documents, and understand your rights and obligations.</span></li>
+      <li><span data-lang="zh">能够就一个有争议的 AI 议题形成有依据的观点，并清楚、诚实地表达出来。</span><span data-lang="en">Form an evidence-based view on a contested AI issue and express it clearly and honestly.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 教学安排 ============ -->
+<section id="schedule" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">教学安排</span><span data-lang="en">Weekly Schedule</span></h2>
+      <p class="section-sub"><span data-lang="zh">16 教学周 · 每周 2 学时 · 周三晚课 · 安排可能微调，以课堂公告为准</span><span data-lang="en">16 weeks · 2 hours per week · Wednesday evening · Subject to change per announcements</span></p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="course-table">
+        <thead>
+          <tr>
+            <th><span data-lang="zh">周次</span><span data-lang="en">Week</span></th>
+            <th><span data-lang="zh">主题</span><span data-lang="en">Topic</span></th>
+            <th><span data-lang="zh">核心内容</span><span data-lang="en">Key Content</span></th>
+            <th><span data-lang="zh">阅读 / 截止</span><span data-lang="en">Reading / Due</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><span data-lang="zh">什么是人工智能</span><span data-lang="en">What Is AI</span></td><td><span data-lang="zh">从图灵测试到今天、三次浪潮、术语祛魅</span><span data-lang="en">From the Turing test to today, three waves, demystifying jargon</span></td><td>—</td></tr>
+          <tr><td>2</td><td><span data-lang="zh">能力边界</span><span data-lang="en">Capability Limits</span></td><td><span data-lang="zh">AI 擅长什么、为什么会「一本正经地胡说」</span><span data-lang="en">What AI is good at; why it hallucinates confidently</span></td><td><span data-lang="zh">《AI 3.0》第 1 章</span><span data-lang="en">AI 3.0 Ch.1</span></td></tr>
+          <tr><td>3</td><td><span data-lang="zh">数据素养（一）</span><span data-lang="en">Data Literacy I</span></td><td><span data-lang="zh">数据从哪来：采集、标注、交易链条</span><span data-lang="en">Where data comes from: collection, labeling, the trading chain</span></td><td><span data-lang="zh">A1 截止 09/27</span><span data-lang="en">A1 due Sep 27</span></td></tr>
+          <tr><td>4</td><td><span data-lang="zh">数据素养（二）</span><span data-lang="en">Data Literacy II</span></td><td><span data-lang="zh">你的画像如何被推断、隐私条款怎么读</span><span data-lang="en">How your profile is inferred; how to actually read a privacy policy</span></td><td><span data-lang="zh">案例材料 02</span><span data-lang="en">Case pack 02</span></td></tr>
+          <tr><td>5</td><td><span data-lang="zh">机器如何「学习」</span><span data-lang="en">How Machines Learn</span></td><td><span data-lang="zh">不用公式理解归纳、参数与过拟合</span><span data-lang="en">Understanding induction, parameters and overfitting without formulas</span></td><td><span data-lang="zh">《AI 3.0》第 2 章</span><span data-lang="en">AI 3.0 Ch.2</span></td></tr>
+          <tr><td>6</td><td><span data-lang="zh">生成式 AI 原理直觉</span><span data-lang="en">How Generative AI Works</span></td><td><span data-lang="zh">预测下一个词、概率与温度、为什么没有「理解」</span><span data-lang="en">Next-token prediction, probability and temperature, why there is no "understanding"</span></td><td><span data-lang="zh">补充讲义 03</span><span data-lang="en">Notes 03</span></td></tr>
+          <tr><td>7</td><td><span data-lang="zh">把 AI 用对地方</span><span data-lang="en">Using AI Well</span></td><td><span data-lang="zh">提示词写法、任务拆分、结果核验三步法</span><span data-lang="en">Prompting, task decomposition, a three-step verification routine</span></td><td><span data-lang="zh">A2 截止 10/11</span><span data-lang="en">A2 due Oct 11</span></td></tr>
+          <tr><td>8</td><td><span data-lang="zh">课堂实践：AI 协作工作坊</span><span data-lang="en">Workshop: Working with AI</span></td><td><span data-lang="zh">现场完成一个真实任务并互评，讨论「省力」与「省事」的区别</span><span data-lang="en">Complete a real task live and peer-review it; discuss effort-saving vs. thinking-saving</span></td><td><span data-lang="zh">A3 截止 10/25</span><span data-lang="en">A3 due Oct 25</span></td></tr>
+          <tr><td>9</td><td><span data-lang="zh">算法偏见与公平</span><span data-lang="en">Bias &amp; Fairness</span></td><td><span data-lang="zh">招聘、信贷、司法中的真实偏见案例</span><span data-lang="en">Real bias cases in hiring, credit and criminal justice</span></td><td><span data-lang="zh">《数学杀伤性武器》选读</span><span data-lang="en">Weapons of Math Destruction (selected)</span></td></tr>
+          <tr><td>10</td><td><span data-lang="zh">隐私与监控</span><span data-lang="en">Privacy &amp; Surveillance</span></td><td><span data-lang="zh">人脸识别、位置数据、同意的边界</span><span data-lang="en">Face recognition, location data, the limits of consent</span></td><td><span data-lang="zh">案例材料 05</span><span data-lang="en">Case pack 05</span></td></tr>
+          <tr><td>11</td><td><span data-lang="zh">深度伪造与信息甄别</span><span data-lang="en">Deepfakes &amp; Verification</span></td><td><span data-lang="zh">伪造音视频的识别方法、谣言传播机制</span><span data-lang="en">Detecting synthetic media; how misinformation spreads</span></td><td><span data-lang="zh">A4 截止 11/08</span><span data-lang="en">A4 due Nov 8</span></td></tr>
+          <tr class="is-break"><td>12</td><td><span data-lang="zh">Guest Talk：AI 与法律</span><span data-lang="en">Guest Talk: AI &amp; Law</span></td><td><span data-lang="zh">法学院李教授：生成式 AI 的版权与责任归属</span><span data-lang="en">Prof. Li (Law School): copyright and liability in generative AI</span></td><td><span data-lang="zh">两篇前置材料</span><span data-lang="en">Two pre-reads</span></td></tr>
+          <tr><td>13</td><td><span data-lang="zh">政策与治理</span><span data-lang="en">Policy &amp; Governance</span></td><td><span data-lang="zh">国内外监管框架、合规义务与伦理审查</span><span data-lang="en">Regulatory frameworks at home and abroad, compliance, ethics review</span></td><td><span data-lang="zh">政策文件汇编</span><span data-lang="en">Policy document pack</span></td></tr>
+          <tr><td>14</td><td><span data-lang="zh">AI、职业与环境</span><span data-lang="en">Work &amp; Environment</span></td><td><span data-lang="zh">哪些工作在被重塑、算力的能源与水资源成本</span><span data-lang="en">Which jobs are being reshaped; the energy and water cost of compute</span></td><td><span data-lang="zh">A5 截止 11/22</span><span data-lang="en">A5 due Nov 22</span></td></tr>
+          <tr><td>15</td><td><span data-lang="zh">小组调研展示</span><span data-lang="en">Group Presentations</span></td><td><span data-lang="zh">每组 8 分钟汇报 + 3 分钟问答，现场互评</span><span data-lang="en">8-minute talks with 3-minute Q&amp;A, peer-graded on site</span></td><td><span data-lang="zh">展示周</span><span data-lang="en">Presentation week</span></td></tr>
+          <tr><td>16</td><td><span data-lang="zh">课程总结与小论文答疑</span><span data-lang="en">Wrap-up &amp; Essay Clinic</span></td><td><span data-lang="zh">回顾三条主线、小论文写作答疑与选题建议</span><span data-lang="en">Review of the three threads; essay writing clinic</span></td><td><span data-lang="zh">小论文截止 12/20</span><span data-lang="en">Essay due Dec 20</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 作业与考核 ============ -->
+<section id="assessment" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">作业与考核</span><span data-lang="en">Assignments &amp; Grading</span></h2>
+      <p class="section-sub"><span data-lang="zh">无闭卷考试 · 全部为写作、调研与展示类任务</span><span data-lang="en">No closed-book exam · All tasks are writing, research or presentation</span></p>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">成绩构成</span><span data-lang="en">Grade Breakdown</span></h3>
+    <div class="grading">
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">出勤与课堂参与</span><span data-lang="en">Attendance &amp; Participation</span></span><div class="bar" style="--w:20"><i></i></div><span class="grade-v">20%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">单元小作业</span><span data-lang="en">Short Assignments</span></span><div class="bar" style="--w:30"><i></i></div><span class="grade-v">30%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">小组调研展示</span><span data-lang="en">Group Presentation</span></span><div class="bar" style="--w:20"><i></i></div><span class="grade-v">20%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">期末小论文</span><span data-lang="en">Final Essay</span></span><div class="bar" style="--w:30"><i></i></div><span class="grade-v">30%</span></div>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">作业列表</span><span data-lang="en">Assignment List</span></h3>
+    <div class="hw-list">
+      <article class="hw is-open">
+        <span class="hw-no">A1</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">我的 AI 使用日志</span><span data-lang="en">My AI Usage Log</span></h4>
+          <p><span data-lang="zh">记录一周内你与 AI 的每次交互，附 300 字反思：哪次最有用、哪次最可疑。</span><span data-lang="en">Log every interaction with AI for one week, plus a 300-word reflection on the most useful and most suspicious one.</span></p>
+        </div>
+        <span class="hw-due">09-27</span>
+        <span class="hw-state state-done"><span data-lang="zh">已截止</span><span data-lang="en">Closed</span></span>
+      </article>
+
+      <article class="hw is-open">
+        <span class="hw-no">A2</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">找一份数据，讲清它的来历</span><span data-lang="en">Trace a Dataset</span></h4>
+          <p><span data-lang="zh">任选一份公开数据集，说明采集方式、可能的偏差与被谁使用。</span><span data-lang="en">Pick a public dataset and explain how it was collected, its likely biases, and who uses it.</span></p>
+        </div>
+        <span class="hw-due">10-11</span>
+        <span class="hw-state state-done"><span data-lang="zh">已截止</span><span data-lang="en">Closed</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">A3</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">提示词对比实验</span><span data-lang="en">Prompt Comparison</span></h4>
+          <p><span data-lang="zh">同一任务写三种提示词，比较输出质量并总结一条你验证有效的写法。</span><span data-lang="en">Write three prompts for the same task, compare outputs, and distill one technique that works.</span></p>
+        </div>
+        <span class="hw-due">10-25</span>
+        <span class="hw-state state-open"><span data-lang="zh">进行中</span><span data-lang="en">Open</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">A4</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">深度伪造识别与信息核查</span><span data-lang="en">Deepfake &amp; Fact-Checking</span></h4>
+          <p><span data-lang="zh">给定 5 段材料，判断真伪并写出你的核查步骤与依据来源。</span><span data-lang="en">Judge five materials as genuine or synthetic, documenting your verification steps and sources.</span></p>
+        </div>
+        <span class="hw-due">11-08</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">A5</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">算法偏见案例调研</span><span data-lang="en">Algorithmic Bias Case Study</span></h4>
+          <p><span data-lang="zh">小组完成，选一个真实偏见事件写 500 字分析：成因、受害者与可能的补救。</span><span data-lang="en">In teams: a 500-word analysis of a real bias incident — cause, who was harmed, possible remedies.</span></p>
+        </div>
+        <span class="hw-due">11-22</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw hw-final">
+        <span class="hw-no">PRJ</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">小组调研展示（3–4 人）</span><span data-lang="en">Group Presentation (3–4)</span></h4>
+          <p><span data-lang="zh">从 15 个选题中挑一个做调研，8 分钟汇报 + 3 分钟问答，现场互评占一半分数。</span><span data-lang="en">Research one of 15 topics; 8-minute talk plus 3-minute Q&amp;A. Peer evaluation counts for half the score.</span></p>
+        </div>
+        <span class="hw-due">12-13</span>
+        <span class="hw-state state-open"><span data-lang="zh">选题中</span><span data-lang="en">Open</span></span>
+      </article>
+
+      <article class="hw hw-final">
+        <span class="hw-no">ESS</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">期末小论文（1500–2000 字，开卷）</span><span data-lang="en">Final Essay (1500–2000 words, open book)</span></h4>
+          <p><span data-lang="zh">就一个有争议的 AI 议题提出你的观点并给出依据。允许且鼓励使用 AI 辅助，但必须附「AI 使用声明」与原始对话记录。</span><span data-lang="en">Argue a position on a contested AI issue with evidence. AI assistance is allowed and encouraged, but an "AI usage statement" and raw transcripts must be attached.</span></p>
+        </div>
+        <span class="hw-due">12-20</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+    </div>
+
+    <p class="more">
+      <span data-lang="zh">所有作业在 Blackboard 提交，接受 PDF、Word 或直接在文本框内粘贴。小作业一般 300–500 字，不要求格式，只要求说清楚。</span>
+      <span data-lang="en">Submit everything on Blackboard as PDF, Word or pasted text. Short assignments are 300–500 words; format does not matter, clarity does.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 资源与阅读 ============ -->
+<section id="resources" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">资源与阅读</span><span data-lang="en">Resources</span></h2>
+      <p class="section-sub"><span data-lang="zh">课件在每次课后更新 · 阅读材料都不长</span><span data-lang="en">Slides updated after each lecture · All readings are short</span></p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h4><span data-lang="zh">课程讲义（按周）</span><span data-lang="en">Lecture Slides (by week)</span></h4>
+        <p><span data-lang="zh">教学大纲与第 1–16 周课件，尽量少字多图，适合课后快速回看。</span><span data-lang="en">Syllabus and weekly slides — few words, many diagrams, easy to skim after class.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/ge102-syllabus.pdf">教学大纲</a>
+          <a href="../assets/files/courses/ge102-week01-08.pdf">第 1–8 周</a>
+          <a href="../assets/files/courses/ge102-week09-16.pdf">第 9–16 周</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">阅读清单</span><span data-lang="en">Reading List</span></h4>
+        <p><span data-lang="zh">主教材《AI 3.0》；参考《数学杀伤性武器》《人机对齐》；每单元另配 1–2 篇短文章。</span><span data-lang="en">Primary text AI 3.0; references Weapons of Math Destruction and The Alignment Problem; 1–2 short articles per unit.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/ge102-reading-list.pdf">阅读清单</a>
+          <a href="../assets/files/courses/ge102-case-packs.pdf">案例材料合辑</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">AI 工具与提示词手册</span><span data-lang="en">AI Tools &amp; Prompt Guide</span></h4>
+        <p><span data-lang="zh">常见工具的能力对比、提示词写法示例，以及一份「结果核验三步法」清单。</span><span data-lang="en">Capability comparison of common tools, prompt examples, and a three-step output-verification checklist.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/ge102-prompt-guide.pdf">提示词手册</a>
+          <a href="../assets/files/courses/ge102-verification-checklist.pdf">核验清单</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">展示选题库</span><span data-lang="en">Presentation Topics</span></h4>
+        <p><span data-lang="zh">15 个调研选题（含推荐材料与切入角度），可自拟题目但需邮件确认。</span><span data-lang="en">Fifteen topics with suggested materials and angles; custom topics need email approval.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/ge102-topics.pdf">选题清单</a>
+          <a href="../assets/files/courses/ge102-presentation-rubric.pdf">评分细则</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">小论文模板与范文</span><span data-lang="en">Essay Template &amp; Samples</span></h4>
+        <p><span data-lang="zh">1500–2000 字论文结构模板、引用规范，以及三篇往届优秀作业。</span><span data-lang="en">Structure template for the 1500–2000 word essay, citation rules, and three outstanding past essays.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/ge102-essay-template.pdf">模板</a>
+          <a href="../assets/files/courses/ge102-sample-essays.pdf">优秀范文</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">延伸：视频与播客</span><span data-lang="en">Beyond Class: Videos &amp; Podcasts</span></h4>
+        <p><span data-lang="zh">按主题整理的公开课视频、纪录片与播客单集，通勤路上可听。</span><span data-lang="en">Lecture videos, documentaries and podcast episodes organized by topic — good for a commute.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/ge102-media-list.pdf">媒体清单</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程政策 ============ -->
+<section id="policies" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程政策</span><span data-lang="en">Course Policies</span></h2>
+    </div>
+
+    <div class="cards cards-2">
+      <article class="card">
+        <h4><span data-lang="zh">出勤与参与</span><span data-lang="en">Attendance &amp; Participation</span></h4>
+        <p><span data-lang="zh">占 20%，看的是你是否到场、是否参与讨论，而不是发言多少。允许请假 2 次且不扣分（无需证明）；超过 2 次请提前邮件说明。无故缺勤超过总课时 1/3 取消考核资格。</span><span data-lang="en">Worth 20%, based on showing up and engaging, not on how much you talk. Two absences are excused without documentation; beyond that, email in advance. Missing over one third of classes without reason disqualifies you.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">迟交与补交</span><span data-lang="en">Late Submission</span></h4>
+        <p><span data-lang="zh">每迟交一天扣 10%，最多接受 3 天。理由充分的延期申请（ illness、赛事、家庭事务）在截止前提出即批准，不扣分。</span><span data-lang="en">10% per late day, up to 3 days. Well-reasoned extension requests (illness, official events, family matters) filed before the deadline are approved without penalty.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">AI 使用规定（本课特别说明）</span><span data-lang="en">AI Usage Policy (course-specific)</span></h4>
+        <p><span data-lang="zh">这门课鼓励你使用 AI——要学会用它，就得真正用它。但你的观点、判断与结论必须来自你自己，且每次使用都要在文末「AI 使用声明」中写明用途、工具与提示词，并附上原始对话链接或截图。未声明使用，或提交未经你改动与核验的 AI 输出，按学术诚信条款处理。</span><span data-lang="en">This course encourages AI use — you cannot learn to use a tool well without using it. But the opinions, judgments and conclusions must be yours, and every use must be declared at the end in an "AI usage statement" listing purpose, tool and prompts, with transcripts or screenshots attached. Undeclared use, or submitting unmodified unverified AI output, falls under the academic integrity clause.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">学术诚信</span><span data-lang="en">Academic Integrity</span></h4>
+        <p><span data-lang="zh">欢迎引用他人观点，但必须注明出处。整段复制教科书、新闻或他人作业而未标注，本次作业记 0 分并按学校规定处理；重复出现直接判定课程不及格。</span><span data-lang="en">Citing others' views is welcome, but sources must be acknowledged. Copying passages from textbooks, news or peers without attribution means a zero and a report per university rules; repeat offenses mean failing the course.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">小组合作</span><span data-lang="en">Teamwork</span></h4>
+        <p><span data-lang="zh">展示与 A5 为小组任务，3–4 人一组。组内互评决定个人分在小组分基础上的调整系数（0.8–1.2）。成员失联请在展示前两周邮件告知，可申请调整。</span><span data-lang="en">The presentation and A5 are team tasks of 3–4. Peer evaluation scales individual scores (0.8–1.2) around the group score. Report non-participating members by email two weeks before the presentation for adjustment.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">成绩申诉</span><span data-lang="en">Grade Appeals</span></h4>
+        <p><span data-lang="zh">对成绩有异议，请在公布后 7 天内邮件说明理由。我会重新阅读你的作业并书面回复；如确有评分偏差，成绩会相应调整。</span><span data-lang="en">Raise appeals by email within 7 days of grade release with your reasoning. I will re-read your work and reply in writing; genuine scoring errors will be corrected.</span></p>
+      </article>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">教学团队</span><span data-lang="en">Teaching Team</span></h3>
+    <div class="team">
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">主讲教师</span><span data-lang="en">Instructor</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">张明远 教授</span><span data-lang="en">Prof. Mingyuan Zhang</span></p>
+          <p class="team-meta">zhangmingyuan@example.edu.cn ·
+            <span data-lang="zh">信息科学楼 A512 · 周三 14:00–16:00</span>
+            <span data-lang="en">Info Science Bldg A512 · Wed 14:00–16:00</span>
+          </p>
+        </div>
+      </div>
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">助教（讨论与批改）</span><span data-lang="en">TA (Discussion &amp; Grading)</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">陈琳 博士生</span><span data-lang="en">Lin Chen, PhD Student</span></p>
+          <p class="team-meta">chenlin@example.edu.cn ·
+            <span data-lang="zh">负责课内分组讨论与作业批改</span>
+            <span data-lang="en">Runs breakout discussions and grades assignments</span>
+          </p>
+        </div>
+      </div>
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">助教（展示与答疑）</span><span data-lang="en">TA (Presentations)</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">王垚 硕士生</span><span data-lang="en">Yao Wang, Master Student</span></p>
+          <p class="team-meta">wangyao@example.edu.cn ·
+            <span data-lang="zh">负责展示排期、选题登记与在线答疑</span>
+            <span data-lang="en">Presentation scheduling, topic sign-up and online Q&amp;A</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 常见问题 ============ -->
+<section id="faq" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">常见问题</span><span data-lang="en">FAQ</span></h2>
+      <p class="section-sub"><span data-lang="zh">选课前最常被问到的几件事</span><span data-lang="en">What students ask most before enrolling</span></p>
+    </div>
+
+    <div class="faq">
+      <details class="faq-item" open>
+        <summary><span data-lang="zh">我完全不会编程，也能选吗？</span><span data-lang="en">I can't code at all. Can I still take this?</span></summary>
+        <p><span data-lang="zh">能，而且这门课就是为你设计的。全课程不写一行代码，不需要数学公式推导。课堂上的「实践」指的是用现成的 AI 工具完成任务、比较结果、判断可信度。</span><span data-lang="en">Yes — this course is designed for you. There is no coding and no formula derivation. "Practice" here means using off-the-shelf AI tools to complete tasks, compare outputs and judge credibility.</span></p>
+      </details>
+
+      <details class="faq-item">
+        <summary><span data-lang="zh">用 AI 写作业算作弊吗？</span><span data-lang="en">Is using AI on assignments cheating?</span></summary>
+        <p><span data-lang="zh">不算，但必须声明。这门课认为「会用 AI」是一项能力，所以鼓励使用；考核的是你的判断而不是 AI 的输出。规则很简单：写明用了什么、怎么用的、附原始对话，且最终内容经过你自己的修改与核验。偷偷用、或者原封不动提交，才构成问题。</span><span data-lang="en">No, but you must declare it. This course treats "using AI well" as a skill, so it is encouraged; what we assess is your judgment, not the AI's output. The rule is simple: state what you used and how, attach the transcript, and make sure the final text is revised and verified by you. Using it covertly, or submitting output unchanged, is the problem.</span></p>
+      </details>
+
+      <details class="faq-item">
+        <summary><span data-lang="zh">我是文科生，会不会听不懂？</span><span data-lang="en">I'm a humanities student — will I be lost?</span></summary>
+        <p><span data-lang="zh">不会。课程刻意从案例切入，第 6 周讲原理时也只用「预测下一个词」这类直觉解释。往届选课学生中文科生约占六成，期末通过率与理工科学生无显著差异。听不懂时请当场打断我——课堂上最受欢迎的问题就是「等等，这步为什么」。</span><span data-lang="en">No. The course deliberately starts from cases, and even the Week 6 mechanics section relies on intuitions like "predicting the next word." Humanities students have made up about 60% of past cohorts, with pass rates comparable to STEM students. If something is unclear, interrupt me on the spot — "wait, why that step?" is the most welcome question in class.</span></p>
+      </details>
+
+      <details class="faq-item">
+        <summary><span data-lang="zh">上课要买教材吗？</span><span data-lang="en">Do I need to buy the textbook?</span></summary>
+        <p><span data-lang="zh">不强制。《AI 3.0》为推荐主教材，图书馆有纸本与电子版，只读前两章即可跟上进度；其余阅读材料会全部发在 Blackboard 上，每单元 1–2 篇，加起来不超过 20 页。</span><span data-lang="en">Not required. AI 3.0 is the recommended primary text and is available in print and electronic form at the library; the first two chapters suffice to keep up. All other readings are posted on Blackboard — 1–2 short pieces per unit, under 20 pages total.</span></p>
+      </details>
+
+      <details class="faq-item">
+        <summary><span data-lang="zh">出勤怎么算？晚上上课会有冲突吗？</span><span data-lang="en">How is attendance counted? Will the evening slot clash?</span></summary>
+        <p><span data-lang="zh">出勤占 20%，允许请假 2 次且不扣分、无需证明。课程安排在周三晚 19:00–20:40，主要是为跨专业选课留出空间；若与必修课冲突，请在第 1 周内邮件告知，我们会说明补修方案。</span><span data-lang="en">Attendance is 20%, with two excused absences requiring no documentation. The Wednesday 19:00–20:40 slot exists to leave room for cross-major enrollment. If it clashes with a required course, email me during Week 1 and we will explain the make-up options.</span></p>
+      </details>
+
+      <details class="faq-item">
+        <summary><span data-lang="zh">这门课和专业课（CS301/CS405）有什么区别？</span><span data-lang="en">How is this different from CS301 / CS405?</span></summary>
+        <p><span data-lang="zh">CS301 与 CS405 面向计算机专业，教你建模与实现；本课程面向全校，教你判断与选择。前者输出的是模型，后者输出的是决策依据。如果你未来要做技术工作，推荐先上通识课建立整体判断，再进入专业课程。</span><span data-lang="en">CS301 and CS405 are for CS majors and teach you to build and implement; this course is for the whole university and teaches you to judge and choose. The former produces models, the latter produces grounds for decisions. If you plan technical work, taking the literacy course first gives you the broader frame before specializing.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span>
+      <span data-lang="zh">张明远 · 人工智能通识 GE102</span>
+      <span data-lang="en">Mingyuan Zhang · GE102 AI Literacy</span>
+    </p>
+    <p class="footer-note">
+      <a href="../index.html"><span data-lang="zh">返回个人主页</span><span data-lang="en">Back to homepage</span></a>
+      · <a href="machine-learning.html"><span data-lang="zh">机器学习 CS301</span><span data-lang="en">Intro to ML CS301</span></a>
+      · <a href="data-mining.html"><span data-lang="zh">数据挖掘 CS405</span><span data-lang="en">Data Mining CS405</span></a>
+      · <span data-lang="zh">最后更新：2026 年 10 月</span><span data-lang="en">Last updated: Oct 2026</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
