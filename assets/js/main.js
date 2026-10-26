@@ -39,9 +39,16 @@
 
   /* ---------- 3. 导航高亮（滚动监听） ---------- */
   var links = Array.prototype.slice.call(document.querySelectorAll(".nav-link"));
-  var sections = links
-    .map(function (a) { return document.querySelector(a.getAttribute("href")); })
-    .filter(Boolean);
+
+  // 只跟踪页内锚点链接（形如 #about），外链如 ../index.html 直接跳过
+  var tracked = [];
+  links.forEach(function (a) {
+    var href = a.getAttribute("href") || "";
+    if (href.charAt(0) !== "#") return;
+    var section = document.getElementById(href.slice(1));
+    if (section) tracked.push({ link: a, section: section });
+  });
+  var sections = tracked.map(function (t) { return t.section; });
 
   if ("IntersectionObserver" in window && sections.length) {
     var visible = new Map();
@@ -53,8 +60,8 @@
       visible.forEach(function (ratio, id) {
         if (ratio > bestRatio) { bestRatio = ratio; bestId = id; }
       });
-      links.forEach(function (a) {
-        a.classList.toggle("is-active", bestId && a.getAttribute("href") === "#" + bestId);
+      tracked.forEach(function (t) {
+        t.link.classList.toggle("is-active", bestId && t.section.id === bestId);
       });
     }, { rootMargin: "-72px 0px -55% 0px", threshold: [0, 0.15, 0.4, 0.75] });
 

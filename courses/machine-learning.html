@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>机器学习导论 CS301 | 张明远 · 课程主页</title>
+<meta name="description" content="机器学习导论（CS301）课程主页：教学安排、作业与项目、课件资源、考核方式与课程政策。">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <span data-lang="zh">← 张明远</span><span data-lang="en">← M. Zhang</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#overview" class="nav-link"><span data-lang="zh">课程简介</span><span data-lang="en">Overview</span></a>
+      <a href="#schedule" class="nav-link"><span data-lang="zh">教学安排</span><span data-lang="en">Schedule</span></a>
+      <a href="#assessment" class="nav-link"><span data-lang="zh">作业与考核</span><span data-lang="en">Assessment</span></a>
+      <a href="#resources" class="nav-link"><span data-lang="zh">课件资源</span><span data-lang="en">Resources</span></a>
+      <a href="#policies" class="nav-link"><span data-lang="zh">课程政策</span><span data-lang="en">Policies</span></a>
+      <a href="../index.html#teaching" class="nav-link"><span data-lang="zh">返回主页</span><span data-lang="en">Home</span></a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span class="ls-on" data-lang="zh">中</span><span class="ls-on" data-lang="en">EN</span>
+        <span class="ls-off" data-lang="zh">/ EN</span><span class="ls-off" data-lang="en">/ 中</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 课程首屏 ============ -->
+<section class="hero hero-course">
+  <div class="container">
+    <p class="eyebrow">
+      <span data-lang="zh">江城大学 · 计算机科学与技术学院 · 2026 秋季学期</span>
+      <span data-lang="en">Jiangcheng University · School of Computer Science · Fall 2026</span>
+    </p>
+
+    <h1 class="hero-name">
+      <span data-lang="zh">机器学习导论</span><span data-lang="en">Introduction to Machine Learning</span>
+    </h1>
+
+    <p class="hero-title">CS301 ·
+      <span data-lang="zh">本科三年级 · 3 学分 · 64 学时</span>
+      <span data-lang="en">Junior Undergraduate · 3 Credits · 64 Hours</span>
+    </p>
+
+    <p class="hero-bio">
+      <span data-lang="zh">本课程系统讲授机器学习的核心思想、经典模型与工程实践方法。课程强调「从数学原理到可运行代码」的完整闭环：每个算法都会推导其优化目标，再动手实现并放到真实数据上验证。完成课程后，你将具备独立建模、评估与调优的能力。</span>
+      <span data-lang="en">This course covers the core ideas, classical models and engineering practice of machine learning. It emphasizes a full loop from mathematical principles to runnable code: for each algorithm we derive its objective, implement it, and validate it on real data. By the end, you will be able to build, evaluate and tune models independently.</span>
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:zhangmingyuan@example.edu.cn">
+        <span data-lang="zh">联系授课教师</span><span data-lang="en">Contact Instructor</span>
+      </a>
+      <a class="btn" href="#schedule">
+        <span data-lang="zh">查看教学安排</span><span data-lang="en">Weekly Schedule</span>
+      </a>
+      <a class="btn btn-ghost" href="#resources">
+        <span data-lang="zh">课件与代码</span><span data-lang="en">Slides &amp; Code</span>
+      </a>
+    </div>
+
+    <!-- 课程基本信息 -->
+    <div class="course-meta-grid">
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">授课时间</span><span data-lang="en">Lectures</span></span>
+        <span class="meta-v"><span data-lang="zh">周二 08:00–09:50 / 周四 08:00–09:50</span><span data-lang="en">Tue 08:00–09:50 / Thu 08:00–09:50</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">授课地点</span><span data-lang="en">Location</span></span>
+        <span class="meta-v"><span data-lang="zh">教学楼 B203</span><span data-lang="en">Building B, Room 203</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">上机实践</span><span data-lang="en">Lab Sessions</span></span>
+        <span class="meta-v"><span data-lang="zh">双周周五 14:00–16:00 · 实验中心 305</span><span data-lang="en">Biweekly Fri 14:00–16:00 · Lab Center 305</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">答疑时间</span><span data-lang="en">Office Hours</span></span>
+        <span class="meta-v"><span data-lang="zh">每周三 14:00–16:00 · 信息科学楼 A512</span><span data-lang="en">Wed 14:00–16:00 · Info Science Bldg A512</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">先修课程</span><span data-lang="en">Prerequisites</span></span>
+        <span class="meta-v"><span data-lang="zh">高等数学、线性代数、概率论与数理统计、Python 编程</span><span data-lang="en">Calculus, Linear Algebra, Probability &amp; Statistics, Python</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">课程平台</span><span data-lang="en">Platform</span></span>
+        <span class="meta-v"><span data-lang="zh">校内 Blackboard + GitHub Classroom</span><span data-lang="en">Blackboard + GitHub Classroom</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程公告 ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程公告</span><span data-lang="en">Announcements</span></h2>
+    </div>
+
+    <div class="notice-list">
+      <article class="notice">
+        <time class="notice-date">2026-10-24</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">第 4 次作业已发布，截止日期延后一周</span><span data-lang="en">Homework 4 released, deadline extended by one week</span></h4>
+          <p><span data-lang="zh">考虑到第 9 周与部分专业的实习安排冲突，HW4（支持向量机与核方法）截止日期调整至 11 月 8 日 23:59。请通过 GitHub Classroom 提交。</span><span data-lang="en">Because Week 9 conflicts with some internship schedules, HW4 (SVM and kernel methods) is now due Nov 8, 23:59. Please submit via GitHub Classroom.</span></p>
+        </div>
+      </article>
+
+      <article class="notice">
+        <time class="notice-date">2026-10-10</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">期中考试安排与范围</span><span data-lang="en">Midterm arrangement and coverage</span></h4>
+          <p><span data-lang="zh">期中考试定于 11 月 5 日（周三）晚 19:00–21:00，地点教学楼 B203。范围：第 1–8 周内容，重点为线性回归、逻辑回归、正则化与模型评估。可携带一页 A4 手写公式纸。</span><span data-lang="en">The midterm is on Nov 5 (Wed), 19:00–21:00, Building B203. Coverage: Weeks 1–8, focusing on linear regression, logistic regression, regularization and model evaluation. One hand-written A4 formula sheet is allowed.</span></p>
+        </div>
+      </article>
+
+      <article class="notice">
+        <time class="notice-date">2026-09-14</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">课程开始 · 请完成第 0 次环境检查</span><span data-lang="en">Course begins · Please finish the Week-0 environment check</span></h4>
+          <p><span data-lang="zh">第一次课为 9 月 15 日。请在课前完成 Python 3.10 + NumPy + scikit-learn 环境配置，并运行 <code>python check_env.py</code> 验证。环境说明见「课件资源」。</span><span data-lang="en">The first lecture is Sep 15. Before class, set up Python 3.10 + NumPy + scikit-learn and run <code>python check_env.py</code> to verify. See Resources for the setup guide.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程简介 ============ -->
+<section id="overview" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程简介</span><span data-lang="en">Course Overview</span></h2>
+      <p class="section-sub"><span data-lang="zh">这门课想带给你什么</span><span data-lang="en">What this course aims to give you</span></p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <span data-lang="zh">机器学习已经从一门专门技术演变为理工科学生的通用素养。本课程不追求覆盖所有前沿模型，而是希望帮你建立一套稳定的判断力：拿到一个实际问题，知道该把它形式化成什么任务、该选什么基线模型、结果不好时该往哪个方向排查。</span>
+        <span data-lang="en">Machine learning has evolved from a specialty into general literacy for science and engineering students. Rather than surveying every frontier model, this course builds a stable sense of judgment: given a real problem, you will know how to formalize it, which baseline to pick, and where to look when results disappoint.</span>
+      </p>
+      <p>
+        <span data-lang="zh">课程分为三个递进层次：前 8 周建立监督学习的完整方法论（建模、损失、优化、评估、正则化）；中段进入非线性模型与无监督学习；后段引入神经网络与实践专题，并以期末项目收尾。每周配有编程作业，全部在真实数据集上完成。</span>
+        <span data-lang="en">The course proceeds in three stages: the first eight weeks establish a complete methodology for supervised learning (modeling, loss, optimization, evaluation, regularization); the middle covers non-linear models and unsupervised learning; the final part introduces neural networks and practical topics, ending with a capstone project. Weekly programming assignments run on real datasets.</span>
+      </p>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">学习目标</span><span data-lang="en">Learning Outcomes</span></h3>
+    <ol class="outcome-list">
+      <li><span data-lang="zh">能够把实际问题抽象为回归、分类、聚类等机器学习任务，并选择合适的评价标准。</span><span data-lang="en">Formalize real problems as regression, classification or clustering tasks and choose appropriate evaluation metrics.</span></li>
+      <li><span data-lang="zh">能够独立推导线性回归、逻辑回归、支持向量机等经典模型的优化目标与求解过程。</span><span data-lang="en">Derive the objectives and solutions of linear regression, logistic regression and SVM independently.</span></li>
+      <li><span data-lang="zh">能够用 NumPy / scikit-learn 从零实现并调试模型，理解每一行代码对应的数学含义。</span><span data-lang="en">Implement and debug models with NumPy / scikit-learn from scratch, understanding the math behind each line.</span></li>
+      <li><span data-lang="zh">能够诊断过拟合与欠拟合，运用交叉验证、正则化与超参搜索改进模型。</span><span data-lang="en">Diagnose over- and under-fitting, and improve models with cross-validation, regularization and hyperparameter search.</span></li>
+      <li><span data-lang="zh">能够规范地报告实验结果，诚实说明方法的局限，并具备阅读英文论文的能力。</span><span data-lang="en">Report results rigorously, state limitations honestly, and read English research papers.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 教学安排 ============ -->
+<section id="schedule" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">教学安排</span><span data-lang="en">Weekly Schedule</span></h2>
+      <p class="section-sub"><span data-lang="zh">16 教学周 · 32 次课 · 安排可能微调，以课堂公告为准</span><span data-lang="en">16 weeks · 32 sessions · Subject to change per announcements</span></p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="course-table">
+        <thead>
+          <tr>
+            <th><span data-lang="zh">周次</span><span data-lang="en">Week</span></th>
+            <th><span data-lang="zh">主题</span><span data-lang="en">Topic</span></th>
+            <th><span data-lang="zh">核心内容</span><span data-lang="en">Key Content</span></th>
+            <th><span data-lang="zh">阅读材料 / 截止</span><span data-lang="en">Reading / Due</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><span data-lang="zh">课程导论</span><span data-lang="en">Introduction</span></td><td><span data-lang="zh">什么是机器学习、三类任务、课程组织方式</span><span data-lang="en">What is ML, three task types, course logistics</span></td><td><span data-lang="zh">西瓜书 第 1 章</span><span data-lang="en">Ch.1</span></td></tr>
+          <tr><td>2</td><td><span data-lang="zh">数学基础回顾</span><span data-lang="en">Math Refresher</span></td><td><span data-lang="zh">向量矩阵运算、导数与梯度、概率基础</span><span data-lang="en">Vector/matrix ops, gradients, probability basics</span></td><td><span data-lang="zh">补充讲义 01</span><span data-lang="en">Notes 01</span></td></tr>
+          <tr><td>3</td><td><span data-lang="zh">线性回归</span><span data-lang="en">Linear Regression</span></td><td><span data-lang="zh">最小二乘、闭式解、几何解释</span><span data-lang="en">Least squares, closed form, geometric view</span></td><td><span data-lang="zh">HW1 截止</span><span data-lang="en">HW1 due</span></td></tr>
+          <tr><td>4</td><td><span data-lang="zh">梯度下降与优化</span><span data-lang="en">Gradient Descent</span></td><td><span data-lang="zh">批量/随机/小批量、学习率、收敛性</span><span data-lang="en">Batch/SGD/mini-batch, learning rate, convergence</span></td><td><span data-lang="zh">西瓜书 第 3 章</span><span data-lang="en">Ch.3</span></td></tr>
+          <tr><td>5</td><td><span data-lang="zh">逻辑回归与分类</span><span data-lang="en">Logistic Regression</span></td><td><span data-lang="zh">Sigmoid、极大似然、多分类扩展</span><span data-lang="en">Sigmoid, MLE, multiclass extension</span></td><td><span data-lang="zh">HW2 截止</span><span data-lang="en">HW2 due</span></td></tr>
+          <tr><td>6</td><td><span data-lang="zh">模型评估</span><span data-lang="en">Model Evaluation</span></td><td><span data-lang="zh">交叉验证、混淆矩阵、ROC/AUC、偏差-方差</span><span data-lang="en">CV, confusion matrix, ROC/AUC, bias-variance</span></td><td><span data-lang="zh">西瓜书 第 2 章</span><span data-lang="en">Ch.2</span></td></tr>
+          <tr><td>7</td><td><span data-lang="zh">正则化</span><span data-lang="en">Regularization</span></td><td><span data-lang="zh">L1/L2、过拟合诊断、早停</span><span data-lang="en">L1/L2, diagnosing overfitting, early stopping</span></td><td><span data-lang="zh">HW3 截止</span><span data-lang="en">HW3 due</span></td></tr>
+          <tr><td>8</td><td><span data-lang="zh">习题课 · 期中小结</span><span data-lang="en">Review Session</span></td><td><span data-lang="zh">真题讲评、常见错误复盘</span><span data-lang="en">Past exam walkthrough, common mistakes</span></td><td><span data-lang="zh">期中复习提纲</span><span data-lang="en">Review outline</span></td></tr>
+          <tr class="is-break"><td>8.5</td><td><span data-lang="zh">期中考试</span><span data-lang="en">Midterm Exam</span></td><td><span data-lang="zh">11 月 5 日 19:00–21:00 · 教学楼 B203</span><span data-lang="en">Nov 5, 19:00–21:00 · Building B203</span></td><td>—</td></tr>
+          <tr><td>9</td><td><span data-lang="zh">支持向量机</span><span data-lang="en">SVM</span></td><td><span data-lang="zh">间隔最大化、对偶问题、核方法</span><span data-lang="en">Max margin, duality, kernel trick</span></td><td><span data-lang="zh">HW4 截止 11/08</span><span data-lang="en">HW4 due Nov 8</span></td></tr>
+          <tr><td>10</td><td><span data-lang="zh">决策树与集成学习</span><span data-lang="en">Trees &amp; Ensembles</span></td><td><span data-lang="zh">信息增益、CART、Bagging 与 Boosting</span><span data-lang="en">Information gain, CART, bagging &amp; boosting</span></td><td><span data-lang="zh">西瓜书 第 4、8 章</span><span data-lang="en">Ch.4, 8</span></td></tr>
+          <tr><td>11</td><td><span data-lang="zh">聚类分析</span><span data-lang="en">Clustering</span></td><td><span data-lang="zh">K-means、层次聚类、聚类有效性指标</span><span data-lang="en">K-means, hierarchical clustering, validity indices</span></td><td><span data-lang="zh">HW5 截止</span><span data-lang="en">HW5 due</span></td></tr>
+          <tr><td>12</td><td><span data-lang="zh">降维</span><span data-lang="en">Dimensionality Reduction</span></td><td><span data-lang="zh">PCA 推导、方差解释率、t-SNE 简介</span><span data-lang="en">PCA derivation, explained variance, t-SNE intro</span></td><td><span data-lang="zh">西瓜书 第 10 章</span><span data-lang="en">Ch.10</span></td></tr>
+          <tr><td>13</td><td><span data-lang="zh">神经网络基础</span><span data-lang="en">Neural Networks</span></td><td><span data-lang="zh">前向/反向传播、激活函数、梯度消失</span><span data-lang="en">Forward/backprop, activations, vanishing gradients</span></td><td><span data-lang="zh">西瓜书 第 5 章</span><span data-lang="en">Ch.5</span></td></tr>
+          <tr><td>14</td><td><span data-lang="zh">深度模型专题</span><span data-lang="en">Deep Models</span></td><td><span data-lang="zh">CNN 与序列模型入门、迁移学习</span><span data-lang="en">Intro to CNN &amp; sequence models, transfer learning</span></td><td><span data-lang="zh">HW6 截止</span><span data-lang="en">HW6 due</span></td></tr>
+          <tr><td>15</td><td><span data-lang="zh">实践专题</span><span data-lang="en">Practice Session</span></td><td><span data-lang="zh">特征工程、超参搜索、实验可复现性</span><span data-lang="en">Feature engineering, hyperparameter search, reproducibility</span></td><td><span data-lang="zh">项目进展检查</span><span data-lang="en">Project check-in</span></td></tr>
+          <tr><td>16</td><td><span data-lang="zh">期末项目展示</span><span data-lang="en">Final Presentations</span></td><td><span data-lang="zh">小组汇报（每组 12 分钟）+ 课程总结</span><span data-lang="en">Group presentations (12 min each) + wrap-up</span></td><td><span data-lang="zh">项目报告提交</span><span data-lang="en">Report due</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 作业与考核 ============ -->
+<section id="assessment" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">作业与考核</span><span data-lang="en">Assignments &amp; Grading</span></h2>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">成绩构成</span><span data-lang="en">Grade Breakdown</span></h3>
+    <div class="grading">
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">平时作业</span><span data-lang="en">Homework</span></span><div class="bar" style="--w:30"><i></i></div><span class="grade-v">30%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">期中考试</span><span data-lang="en">Midterm</span></span><div class="bar" style="--w:15"><i></i></div><span class="grade-v">15%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">期末项目</span><span data-lang="en">Final Project</span></span><div class="bar" style="--w:25"><i></i></div><span class="grade-v">25%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">期末考试</span><span data-lang="en">Final Exam</span></span><div class="bar" style="--w:30"><i></i></div><span class="grade-v">30%</span></div>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">作业列表</span><span data-lang="en">Assignment List</span></h3>
+    <div class="hw-list">
+      <article class="hw is-open">
+        <span class="hw-no">HW1</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">线性回归与最小二乘</span><span data-lang="en">Linear Regression &amp; Least Squares</span></h4>
+          <p><span data-lang="zh">手写闭式解与梯度下降两种实现，在房价数据集上对比收敛速度。</span><span data-lang="en">Implement closed-form and gradient descent, compare convergence on a housing dataset.</span></p>
+        </div>
+        <span class="hw-due">09-27</span>
+        <span class="hw-state state-done"><span data-lang="zh">已截止</span><span data-lang="en">Closed</span></span>
+      </article>
+
+      <article class="hw is-open">
+        <span class="hw-no">HW2</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">逻辑回归与正则化</span><span data-lang="en">Logistic Regression &amp; Regularization</span></h4>
+          <p><span data-lang="zh">实现带 L2 正则的逻辑回归，观察正则系数对决策边界的影响。</span><span data-lang="en">Implement L2-regularized logistic regression and observe the effect of the coefficient on decision boundaries.</span></p>
+        </div>
+        <span class="hw-due">10-11</span>
+        <span class="hw-state state-done"><span data-lang="zh">已截止</span><span data-lang="en">Closed</span></span>
+      </article>
+
+      <article class="hw is-open">
+        <span class="hw-no">HW3</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">模型选择与交叉验证</span><span data-lang="en">Model Selection &amp; Cross-Validation</span></h4>
+          <p><span data-lang="zh">k 折交叉验证实现、学习曲线绘制、偏差-方差分解实验。</span><span data-lang="en">Implement k-fold CV, plot learning curves, run a bias-variance decomposition experiment.</span></p>
+        </div>
+        <span class="hw-due">10-25</span>
+        <span class="hw-state state-done"><span data-lang="zh">已截止</span><span data-lang="en">Closed</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW4</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">支持向量机与核方法</span><span data-lang="en">SVM &amp; Kernel Methods</span></h4>
+          <p><span data-lang="zh">实现 SMO 简化版，对比线性核与 RBF 核在非线性数据上的表现。</span><span data-lang="en">Implement a simplified SMO; compare linear vs RBF kernels on non-linear data.</span></p>
+        </div>
+        <span class="hw-due">11-08</span>
+        <span class="hw-state state-open"><span data-lang="zh">进行中</span><span data-lang="en">Open</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW5</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">聚类与降维</span><span data-lang="en">Clustering &amp; PCA</span></h4>
+          <p><span data-lang="zh">K-means 与层次聚类对比，PCA 从零实现并用于图像压缩。</span><span data-lang="en">Compare K-means and hierarchical clustering; implement PCA from scratch for image compression.</span></p>
+        </div>
+        <span class="hw-due">11-22</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW6</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">神经网络与调参实战</span><span data-lang="en">Neural Networks &amp; Tuning</span></h4>
+          <p><span data-lang="zh">手写两层网络反向传播，使用网格搜索完成超参调优。</span><span data-lang="en">Hand-code backprop for a two-layer net; tune hyperparameters via grid search.</span></p>
+        </div>
+        <span class="hw-due">12-06</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw hw-final">
+        <span class="hw-no">PRJ</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">期末课程项目（2–3 人小组）</span><span data-lang="en">Final Project (2–3 per group)</span></h4>
+          <p><span data-lang="zh">自选数据集与任务，完成从基线到改进的完整实验，提交代码、报告与 12 分钟汇报。</span><span data-lang="en">Pick your own dataset and task, run experiments from baseline to improvement, submit code, a report and a 12-minute talk.</span></p>
+        </div>
+        <span class="hw-due">12-24</span>
+        <span class="hw-state state-open"><span data-lang="zh">选题中</span><span data-lang="en">Open</span></span>
+      </article>
+    </div>
+
+    <p class="more">
+      <span data-lang="zh">所有作业通过 GitHub Classroom 提交，仓库链接见课程平台。提交后请在 Blackboard 确认「已提交」状态。</span>
+      <span data-lang="en">All assignments are submitted via GitHub Classroom; the link is on the course platform. Please confirm the "submitted" status on Blackboard afterwards.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 课件资源 ============ -->
+<section id="resources" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课件资源</span><span data-lang="en">Resources</span></h2>
+      <p class="section-sub"><span data-lang="zh">课件在每次课后更新</span><span data-lang="en">Slides are updated after each lecture</span></p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h4><span data-lang="zh">课程讲义（按周）</span><span data-lang="en">Lecture Slides (by week)</span></h4>
+        <p><span data-lang="zh">教学大纲、第 1–16 周 PDF 课件，含课堂板书补充与推导细节。</span><span data-lang="en">Syllabus and weekly PDF slides, including board-work supplements and derivations.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs301-syllabus.pdf">教学大纲</a>
+          <a href="../assets/files/courses/cs301-week01-08.pdf">第 1–8 周</a>
+          <a href="../assets/files/courses/cs301-week09-16.pdf">第 9–16 周</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">代码示例与数据集</span><span data-lang="en">Code &amp; Datasets</span></h4>
+        <p><span data-lang="zh">课堂演示的 Jupyter Notebook，以及作业使用的数据集。</span><span data-lang="en">Jupyter notebooks used in class, plus the datasets for assignments.</span></p>
+        <div class="pub-links">
+          <a href="https://github.com/YOUR_ID/cs301-2026fall">GitHub 仓库</a>
+          <a href="../assets/files/courses/cs301-datasets.zip">数据集</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">实验环境说明</span><span data-lang="en">Environment Setup</span></h4>
+        <p><span data-lang="zh">Python 3.10 + NumPy + scikit-learn 安装指引与 <code>check_env.py</code> 自检脚本。</span><span data-lang="en">Installation guide for Python 3.10 + NumPy + scikit-learn, with a <code>check_env.py</code> self-check script.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs301-setup.pdf">安装指引</a>
+          <a href="../assets/files/courses/check_env.py">check_env.py</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">教材与参考书</span><span data-lang="en">Textbooks</span></h4>
+        <p><span data-lang="zh">周志华《机器学习》（主教材）；Bishop《PRML》、Hastie《ESL》、Géron《Hands-On ML》（参考）。</span><span data-lang="en">Zhou Zhihua, Machine Learning (primary); Bishop PRML, Hastie ESL, Géron Hands-On ML (references).</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs301-reading-list.pdf">阅读清单</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">往年试卷与复习提纲</span><span data-lang="en">Past Exams &amp; Reviews</span></h4>
+        <p><span data-lang="zh">近三年期中期末试卷（含答案要点）与复习提纲。</span><span data-lang="en">Past three years' midterm and final papers (with answer outlines) and review sheets.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs301-past-exams.pdf">试卷合集</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">项目选题参考</span><span data-lang="en">Project Ideas</span></h4>
+        <p><span data-lang="zh">20 个往届优秀选题与评分细则，含数据获取渠道建议。</span><span data-lang="en">Twenty excellent past topics with the grading rubric and data source suggestions.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs301-project-ideas.pdf">选题清单</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程政策 ============ -->
+<section id="policies" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程政策</span><span data-lang="en">Course Policies</span></h2>
+    </div>
+
+    <div class="cards cards-2">
+      <article class="card">
+        <h4><span data-lang="zh">迟交与补交</span><span data-lang="en">Late Submission</span></h4>
+        <p><span data-lang="zh">每迟交一天扣 10%，最多接受 3 天。因病假、赛事等特殊情况，可凭证明在截止前申请延期，另行安排不受扣分。</span><span data-lang="en">10% deducted per late day, up to 3 days. For illness or official events, request an extension before the deadline with documentation — no penalty applies.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">学术诚信</span><span data-lang="en">Academic Integrity</span></h4>
+        <p><span data-lang="zh">允许讨论思路，但代码与报告必须独立完成。抄袭或复制他人作业，本次作业记 0 分并按学校规定处理；重复出现将直接判定课程不及格。</span><span data-lang="en">Discussing ideas is fine; code and reports must be your own. Plagiarism results in a zero for that assignment and a report per university rules; repeat offenses mean failing the course.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">生成式 AI 使用规定</span><span data-lang="en">Generative AI Policy</span></h4>
+        <p><span data-lang="zh">允许使用 AI 辅助调试与解释概念，但不得直接提交 AI 生成的代码或文本。凡使用过 AI 工具，须在作业末尾的「AI 使用声明」中说明用途与提示词。未声明而发现使用的，按学术诚信条款处理。</span><span data-lang="en">You may use AI to debug or explain concepts, but may not submit AI-generated code or text as your own. Any use must be declared in the "AI usage statement" at the end of the assignment, describing purpose and prompts. Undeclared use falls under the academic integrity clause.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">考勤与成绩申诉</span><span data-lang="en">Attendance &amp; Appeals</span></h4>
+        <p><span data-lang="zh">无故缺勤超过总课时 1/3 取消考试资格；请假需提前邮件告知助教。对成绩有异议，请在公布后 7 天内邮件提出，我会逐题复核。</span><span data-lang="en">Missing over one third of classes without reason disqualifies you from the exam; email the TA in advance to request leave. Grade appeals must be raised by email within 7 days of release; I will re-check item by item.</span></p>
+      </article>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">教学团队</span><span data-lang="en">Teaching Team</span></h3>
+    <div class="team">
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">主讲教师</span><span data-lang="en">Instructor</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">张明远 教授</span><span data-lang="en">Prof. Mingyuan Zhang</span></p>
+          <p class="team-meta">zhangmingyuan@example.edu.cn ·
+            <span data-lang="zh">信息科学楼 A512 · 周三 14:00–16:00</span>
+            <span data-lang="en">Info Science Bldg A512 · Wed 14:00–16:00</span>
+          </p>
+        </div>
+      </div>
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">助教（答疑）</span><span data-lang="en">TA (Q&amp;A)</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">陈琳 博士生</span><span data-lang="en">Lin Chen, PhD Student</span></p>
+          <p class="team-meta">chenlin@example.edu.cn ·
+            <span data-lang="zh">实验中心 305 · 周五 14:00–16:00</span>
+            <span data-lang="en">Lab Center 305 · Fri 14:00–16:00</span>
+          </p>
+        </div>
+      </div>
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">助教（作业）</span><span data-lang="en">TA (Grading)</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">王垚 硕士生</span><span data-lang="en">Yao Wang, Master Student</span></p>
+          <p class="team-meta">wangyao@example.edu.cn ·
+            <span data-lang="zh">作业批改与成绩录入</span>
+            <span data-lang="en">Assignment grading and grade recording</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span>
+      <span data-lang="zh">张明远 · 机器学习导论 CS301</span>
+      <span data-lang="en">Mingyuan Zhang · CS301 Introduction to Machine Learning</span>
+    </p>
+    <p class="footer-note">
+      <a href="../index.html"><span data-lang="zh">返回个人主页</span><span data-lang="en">Back to homepage</span></a>
+      · <a href="data-mining.html"><span data-lang="zh">数据挖掘 CS405</span><span data-lang="en">Data Mining CS405</span></a>
+      · <span data-lang="zh">最后更新：2026 年 10 月</span><span data-lang="en">Last updated: Oct 2026</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

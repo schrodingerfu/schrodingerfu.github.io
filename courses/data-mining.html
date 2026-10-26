@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>数据挖掘与知识发现 CS405 | 张明远 · 课程主页</title>
+<meta name="description" content="数据挖掘与知识发现（CS405）课程主页：教学安排、作业与项目、数据集与课件资源、考核方式与课程政策。">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <span data-lang="zh">← 张明远</span><span data-lang="en">← M. Zhang</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#overview" class="nav-link"><span data-lang="zh">课程简介</span><span data-lang="en">Overview</span></a>
+      <a href="#schedule" class="nav-link"><span data-lang="zh">教学安排</span><span data-lang="en">Schedule</span></a>
+      <a href="#assessment" class="nav-link"><span data-lang="zh">作业与考核</span><span data-lang="en">Assessment</span></a>
+      <a href="#resources" class="nav-link"><span data-lang="zh">数据集与资源</span><span data-lang="en">Resources</span></a>
+      <a href="#policies" class="nav-link"><span data-lang="zh">课程政策</span><span data-lang="en">Policies</span></a>
+      <a href="../index.html#teaching" class="nav-link"><span data-lang="zh">返回主页</span><span data-lang="en">Home</span></a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span class="ls-on" data-lang="zh">中</span><span class="ls-on" data-lang="en">EN</span>
+        <span class="ls-off" data-lang="zh">/ EN</span><span class="ls-off" data-lang="en">/ 中</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 课程首屏 ============ -->
+<section class="hero hero-course">
+  <div class="container">
+    <p class="eyebrow">
+      <span data-lang="zh">江城大学 · 计算机科学与技术学院 · 2027 春季学期</span>
+      <span data-lang="en">Jiangcheng University · School of Computer Science · Spring 2027</span>
+    </p>
+
+    <h1 class="hero-name">
+      <span data-lang="zh">数据挖掘与知识发现</span><span data-lang="en">Data Mining &amp; Knowledge Discovery</span>
+    </h1>
+
+    <p class="hero-title">CS405 ·
+      <span data-lang="zh">本科四年级 / 研究生 · 3 学分 · 48 学时</span>
+      <span data-lang="en">Senior Undergraduate / Graduate · 3 Credits · 48 Hours</span>
+    </p>
+
+    <p class="hero-bio">
+      <span data-lang="zh">本课程围绕「从大规模数据中提炼可解释的知识」这一主线展开，覆盖数据预处理、关联分析、聚类、图挖掘与推荐系统五大模块。课程以真实数据集驱动：每学完一类方法，就在完整数据上跑通一遍，最终独立完成一份可交付的数据分析报告。</span>
+      <span data-lang="en">The course follows one thread — extracting interpretable knowledge from large-scale data — across five modules: preprocessing, association analysis, clustering, graph mining and recommender systems. It is dataset-driven: after each method you run it end-to-end on real data, finishing with a deliverable data-analysis report.</span>
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:zhangmingyuan@example.edu.cn">
+        <span data-lang="zh">联系授课教师</span><span data-lang="en">Contact Instructor</span>
+      </a>
+      <a class="btn" href="#schedule">
+        <span data-lang="zh">查看教学安排</span><span data-lang="en">Weekly Schedule</span>
+      </a>
+      <a class="btn btn-ghost" href="#resources">
+        <span data-lang="zh">数据集与代码</span><span data-lang="en">Datasets &amp; Code</span>
+      </a>
+    </div>
+
+    <!-- 课程基本信息 -->
+    <div class="course-meta-grid">
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">授课时间</span><span data-lang="en">Lectures</span></span>
+        <span class="meta-v"><span data-lang="zh">周一 10:10–12:00（3 学时连排）</span><span data-lang="en">Mon 10:10–12:00 (3 class hours)</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">授课地点</span><span data-lang="en">Location</span></span>
+        <span class="meta-v"><span data-lang="zh">教学楼 C401</span><span data-lang="en">Building C, Room 401</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">上机实践</span><span data-lang="en">Lab Sessions</span></span>
+        <span class="meta-v"><span data-lang="zh">单周周五 14:00–16:50 · 实验中心 307</span><span data-lang="en">Alternate Fri 14:00–16:50 · Lab Center 307</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">答疑时间</span><span data-lang="en">Office Hours</span></span>
+        <span class="meta-v"><span data-lang="zh">每周三 14:00–16:00 · 信息科学楼 A512</span><span data-lang="en">Wed 14:00–16:00 · Info Science Bldg A512</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">先修课程</span><span data-lang="en">Prerequisites</span></span>
+        <span class="meta-v"><span data-lang="zh">数据结构与算法、概率统计、机器学习导论（或同等基础）</span><span data-lang="en">Data Structures, Probability &amp; Statistics, Intro to ML (or equivalent)</span></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k"><span data-lang="zh">课程平台</span><span data-lang="en">Platform</span></span>
+        <span class="meta-v"><span data-lang="zh">校内 Blackboard + GitHub Classroom</span><span data-lang="en">Blackboard + GitHub Classroom</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程公告 ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程公告</span><span data-lang="en">Announcements</span></h2>
+    </div>
+
+    <div class="notice-list">
+      <article class="notice">
+        <time class="notice-date">2027-03-08</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">期末项目组队开放，数据集清单已发布</span><span data-lang="en">Project team registration open; dataset list published</span></h4>
+          <p><span data-lang="zh">2–3 人自由组队，3 月 22 日前在 Blackboard 提交组队信息。课程提供 12 个可选数据集，也允许自选外部数据集（需提前邮件说明数据来源与研究问题）。</span><span data-lang="en">Form teams of 2–3 and register on Blackboard by Mar 22. Twelve datasets are provided; external datasets are allowed if you email the source and research question in advance.</span></p>
+        </div>
+      </article>
+
+      <article class="notice">
+        <time class="notice-date">2027-02-26</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">第一次作业发布：数据预处理与探索</span><span data-lang="en">HW1 released: preprocessing and exploration</span></h4>
+          <p><span data-lang="zh">HW1 已发布，截止 3 月 14 日 23:59。请使用课程提供的 UCI 数据集完成清洗、缺失值处理与探索性分析，提交 Notebook 与一页结论摘要。</span><span data-lang="en">HW1 is out, due Mar 14 23:59. Clean and explore the provided UCI dataset; submit a notebook plus a one-page summary of findings.</span></p>
+        </div>
+      </article>
+
+      <article class="notice">
+        <time class="notice-date">2027-02-20</time>
+        <div class="notice-body">
+          <h4><span data-lang="zh">课程开始 · 请提前完成环境配置</span><span data-lang="en">Course begins · Set up your environment beforehand</span></h4>
+          <p><span data-lang="zh">第一次课为 2 月 22 日。请在课前装好 Python 3.10 + pandas + scikit-learn + NetworkX，并运行 <code>python check_env.py</code> 验证。环境说明见「数据集与资源」。</span><span data-lang="en">The first lecture is Feb 22. Install Python 3.10 + pandas + scikit-learn + NetworkX beforehand and run <code>python check_env.py</code> to verify. See Resources for details.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程简介 ============ -->
+<section id="overview" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程简介</span><span data-lang="en">Course Overview</span></h2>
+      <p class="section-sub"><span data-lang="zh">这门课想带给你什么</span><span data-lang="en">What this course aims to give you</span></p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <span data-lang="zh">数据并不会自动说话。同样的交易日志，有人只看到一堆数字，有人能从中挖出稳定的购买模式——差别在于是否掌握一套系统化的挖掘方法。本课程的目标，就是让你成为后者。</span>
+        <span data-lang="en">Data does not speak by itself. Given the same transaction log, one person sees numbers, another extracts stable purchasing patterns — the difference is a systematic mining methodology. This course aims to make you the latter.</span>
+      </p>
+      <p>
+        <span data-lang="zh">与《机器学习导论》侧重预测建模不同，本课程更关注「发现」：在没有明确标签的情况下理解数据结构，找出频繁模式、自然分组、关键节点与关联规律。因此课程会花相当篇幅讨论结果的可解释性——一个无法向业务方讲清楚的挖掘结果，价值接近于零。</span>
+        <span data-lang="en">Unlike Intro to ML, which emphasizes predictive modeling, this course focuses on discovery: understanding structure without labeled targets, finding frequent patterns, natural groupings, key nodes and associations. Considerable time goes to interpretability — a mining result you cannot explain to a stakeholder is worth close to zero.</span>
+      </p>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">学习目标</span><span data-lang="en">Learning Outcomes</span></h3>
+    <ol class="outcome-list">
+      <li><span data-lang="zh">能够完成完整的数据挖掘流程：获取、清洗、探索、建模、评估与呈现。</span><span data-lang="en">Carry out a full mining pipeline: acquisition, cleaning, exploration, modeling, evaluation and presentation.</span></li>
+      <li><span data-lang="zh">能够正确选择并解释关联规则、聚类、图挖掘等无监督方法的适用条件与参数含义。</span><span data-lang="en">Select and explain unsupervised methods — association rules, clustering, graph mining — including when they apply and what their parameters mean.</span></li>
+      <li><span data-lang="zh">能够评估挖掘结果的质量与稳定性，识别偶然模式与虚假关联。</span><span data-lang="en">Assess the quality and stability of mined results, spotting spurious patterns and false associations.</span></li>
+      <li><span data-lang="zh">能够使用 NetworkX、scikit-learn、pandas 等工具在中等规模数据上完成端到端实验。</span><span data-lang="en">Run end-to-end experiments on medium-scale data using NetworkX, scikit-learn and pandas.</span></li>
+      <li><span data-lang="zh">能够撰写结构完整、结论可信、诚实说明局限的数据分析报告，并完成口头汇报。</span><span data-lang="en">Write a well-structured, credible analysis report that states limitations honestly, and present it orally.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 教学安排 ============ -->
+<section id="schedule" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">教学安排</span><span data-lang="en">Weekly Schedule</span></h2>
+      <p class="section-sub"><span data-lang="zh">16 教学周 · 每周 3 学时 · 安排可能微调，以课堂公告为准</span><span data-lang="en">16 weeks · 3 hours per week · Subject to change per announcements</span></p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="course-table">
+        <thead>
+          <tr>
+            <th><span data-lang="zh">周次</span><span data-lang="en">Week</span></th>
+            <th><span data-lang="zh">主题</span><span data-lang="en">Topic</span></th>
+            <th><span data-lang="zh">核心内容</span><span data-lang="en">Key Content</span></th>
+            <th><span data-lang="zh">阅读材料 / 截止</span><span data-lang="en">Reading / Due</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><span data-lang="zh">导论与挖掘流程</span><span data-lang="en">Intro &amp; Process</span></td><td><span data-lang="zh">数据挖掘任务分类、CRISP-DM 流程、课程组织</span><span data-lang="en">Task taxonomy, CRISP-DM process, logistics</span></td><td><span data-lang="zh">Han 教材 第 1–2 章</span><span data-lang="en">Han Ch.1–2</span></td></tr>
+          <tr><td>2</td><td><span data-lang="zh">数据预处理</span><span data-lang="en">Preprocessing</span></td><td><span data-lang="zh">数据清洗、集成、规约与变换、缺失值策略</span><span data-lang="en">Cleaning, integration, reduction, transformation, missing values</span></td><td><span data-lang="zh">Han 教材 第 3 章</span><span data-lang="en">Han Ch.3</span></td></tr>
+          <tr><td>3</td><td><span data-lang="zh">相似性与探索分析</span><span data-lang="en">Similarity &amp; EDA</span></td><td><span data-lang="zh">距离与相似度度量、探索性数据分析、可视化</span><span data-lang="en">Distance/similarity measures, EDA, visualization</span></td><td><span data-lang="zh">HW1 截止 03/14</span><span data-lang="en">HW1 due Mar 14</span></td></tr>
+          <tr><td>4</td><td><span data-lang="zh">关联规则：Apriori</span><span data-lang="en">Apriori</span></td><td><span data-lang="zh">频繁项集、先验原理、支持度与置信度</span><span data-lang="en">Frequent itemsets, prior principle, support &amp; confidence</span></td><td><span data-lang="zh">Han 教材 第 6 章</span><span data-lang="en">Han Ch.6</span></td></tr>
+          <tr><td>5</td><td><span data-lang="zh">FP-Growth 与模式评估</span><span data-lang="en">FP-Growth &amp; Evaluation</span></td><td><span data-lang="zh">FP 树构建、提升度与兴趣度、模式的冗余剪枝</span><span data-lang="en">FP-tree construction, lift &amp; interestingness, redundancy pruning</span></td><td><span data-lang="zh">HW2 截止 03/28</span><span data-lang="en">HW2 due Mar 28</span></td></tr>
+          <tr><td>6</td><td><span data-lang="zh">序列模式与时序挖掘</span><span data-lang="en">Sequential Patterns</span></td><td><span data-lang="zh">GSP、PrefixSpan、时间间隔与周期性模式</span><span data-lang="en">GSP, PrefixSpan, interval and periodic patterns</span></td><td><span data-lang="zh">补充讲义 03</span><span data-lang="en">Notes 03</span></td></tr>
+          <tr><td>7</td><td><span data-lang="zh">分类：树与规则</span><span data-lang="en">Classification: Trees &amp; Rules</span></td><td><span data-lang="zh">决策树归纳、规则抽取、过拟合与剪枝</span><span data-lang="en">Tree induction, rule extraction, overfitting &amp; pruning</span></td><td><span data-lang="zh">Han 教材 第 8 章</span><span data-lang="en">Han Ch.8</span></td></tr>
+          <tr><td>8</td><td><span data-lang="zh">分类：贝叶斯与近邻</span><span data-lang="en">Bayes &amp; kNN</span></td><td><span data-lang="zh">朴素贝叶斯、k 近邻、类别不平衡与代价敏感学习</span><span data-lang="en">Naive Bayes, kNN, class imbalance and cost-sensitive learning</span></td><td><span data-lang="zh">HW3 截止 04/11</span><span data-lang="en">HW3 due Apr 11</span></td></tr>
+          <tr class="is-break"><td>9</td><td><span data-lang="zh">期中考试</span><span data-lang="en">Midterm Exam</span></td><td><span data-lang="zh">第 1–8 周内容 · 教学楼 C401 · 闭卷</span><span data-lang="en">Weeks 1–8 · Building C401 · Closed book</span></td><td>—</td></tr>
+          <tr><td>10</td><td><span data-lang="zh">聚类：划分方法</span><span data-lang="en">Partitioning Clustering</span></td><td><span data-lang="zh">K-means、K-medoids、初始中心选择与收敛</span><span data-lang="en">K-means, K-medoids, centroid initialization, convergence</span></td><td><span data-lang="zh">Han 教材 第 10 章</span><span data-lang="en">Han Ch.10</span></td></tr>
+          <tr><td>11</td><td><span data-lang="zh">聚类：层次与密度</span><span data-lang="en">Hierarchical &amp; Density</span></td><td><span data-lang="zh">AGNES/DIANA、DBSCAN、参数敏感性与簇数选择</span><span data-lang="en">AGNES/DIANA, DBSCAN, parameter sensitivity, choosing k</span></td><td><span data-lang="zh">HW4 截止 04/25</span><span data-lang="en">HW4 due Apr 25</span></td></tr>
+          <tr><td>12</td><td><span data-lang="zh">聚类评估与异常检测</span><span data-lang="en">Cluster Validity &amp; Outliers</span></td><td><span data-lang="zh">内部/外部指标、轮廓系数、离群点检测方法</span><span data-lang="en">Internal/external indices, silhouette, outlier detection</span></td><td><span data-lang="zh">补充讲义 05</span><span data-lang="en">Notes 05</span></td></tr>
+          <tr><td>13</td><td><span data-lang="zh">图挖掘基础</span><span data-lang="en">Graph Mining</span></td><td><span data-lang="zh">中心性指标、连通分量、社区发现与模块度</span><span data-lang="en">Centrality, connected components, community detection, modularity</span></td><td><span data-lang="zh">Leskovec 第 10 章</span><span data-lang="en">Leskovec Ch.10</span></td></tr>
+          <tr><td>14</td><td><span data-lang="zh">图表示学习入门</span><span data-lang="en">Graph Representation Learning</span></td><td><span data-lang="zh">DeepWalk / node2vec 思想、图神经网络简介</span><span data-lang="en">DeepWalk / node2vec intuition, intro to GNNs</span></td><td><span data-lang="zh">HW5 截止 05/16</span><span data-lang="en">HW5 due May 16</span></td></tr>
+          <tr><td>15</td><td><span data-lang="zh">推荐系统</span><span data-lang="en">Recommender Systems</span></td><td><span data-lang="zh">协同过滤、矩阵分解、冷启动与评估指标</span><span data-lang="en">Collaborative filtering, matrix factorization, cold start, metrics</span></td><td><span data-lang="zh">HW6 截止 05/30</span><span data-lang="en">HW6 due May 30</span></td></tr>
+          <tr><td>16</td><td><span data-lang="zh">期末项目汇报</span><span data-lang="en">Final Presentations</span></td><td><span data-lang="zh">小组汇报（每组 15 分钟）+ 课程总结</span><span data-lang="en">Group presentations (15 min each) + wrap-up</span></td><td><span data-lang="zh">报告提交 06/13</span><span data-lang="en">Report due Jun 13</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 作业与考核 ============ -->
+<section id="assessment" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">作业与考核</span><span data-lang="en">Assignments &amp; Grading</span></h2>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">成绩构成</span><span data-lang="en">Grade Breakdown</span></h3>
+    <div class="grading">
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">平时作业</span><span data-lang="en">Homework</span></span><div class="bar" style="--w:25"><i></i></div><span class="grade-v">25%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">期中考试</span><span data-lang="en">Midterm</span></span><div class="bar" style="--w:15"><i></i></div><span class="grade-v">15%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">课程项目报告</span><span data-lang="en">Project Report</span></span><div class="bar" style="--w:35"><i></i></div><span class="grade-v">35%</span></div>
+      <div class="grade-row"><span class="grade-k"><span data-lang="zh">期末考试</span><span data-lang="en">Final Exam</span></span><div class="bar" style="--w:25"><i></i></div><span class="grade-v">25%</span></div>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">作业列表</span><span data-lang="en">Assignment List</span></h3>
+    <div class="hw-list">
+      <article class="hw is-open">
+        <span class="hw-no">HW1</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">数据预处理与探索性分析</span><span data-lang="en">Preprocessing &amp; EDA</span></h4>
+          <p><span data-lang="zh">完成清洗、缺失值处理与特征规约，输出一页数据质量结论摘要。</span><span data-lang="en">Clean data, handle missing values, reduce features; deliver a one-page data-quality summary.</span></p>
+        </div>
+        <span class="hw-due">03-14</span>
+        <span class="hw-state state-open"><span data-lang="zh">进行中</span><span data-lang="en">Open</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW2</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">关联规则挖掘</span><span data-lang="en">Association Rule Mining</span></h4>
+          <p><span data-lang="zh">实现 Apriori 与 FP-Growth，对比效率并用提升度筛除虚假规则。</span><span data-lang="en">Implement Apriori and FP-Growth, compare efficiency, filter spurious rules by lift.</span></p>
+        </div>
+        <span class="hw-due">03-28</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW3</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">分类模型对比</span><span data-lang="en">Classifier Comparison</span></h4>
+          <p><span data-lang="zh">在类别不平衡数据上比较决策树、朴素贝叶斯与 kNN，讨论指标选择。</span><span data-lang="en">Compare decision trees, Naive Bayes and kNN on imbalanced data; discuss metric choice.</span></p>
+        </div>
+        <span class="hw-due">04-11</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW4</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">聚类与异常检测</span><span data-lang="en">Clustering &amp; Outlier Detection</span></h4>
+          <p><span data-lang="zh">K-means 与 DBSCAN 对比、轮廓系数选 k、离群点检测实践。</span><span data-lang="en">Compare K-means and DBSCAN, choose k via silhouette, detect outliers.</span></p>
+        </div>
+        <span class="hw-due">04-25</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW5</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">图挖掘与社区发现</span><span data-lang="en">Graph Mining &amp; Communities</span></h4>
+          <p><span data-lang="zh">用 NetworkX 计算中心性，实现一种社区发现算法并可视化。</span><span data-lang="en">Compute centrality with NetworkX, implement a community detection algorithm, visualize results.</span></p>
+        </div>
+        <span class="hw-due">05-16</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw">
+        <span class="hw-no">HW6</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">推荐系统与矩阵分解</span><span data-lang="en">Recommenders &amp; Matrix Factorization</span></h4>
+          <p><span data-lang="zh">实现 User-Based CF 与 SVD 分解，处理冷启动并做离线评估。</span><span data-lang="en">Implement user-based CF and SVD; handle cold start and run offline evaluation.</span></p>
+        </div>
+        <span class="hw-due">05-30</span>
+        <span class="hw-state state-todo"><span data-lang="zh">未发布</span><span data-lang="en">Upcoming</span></span>
+      </article>
+
+      <article class="hw hw-final">
+        <span class="hw-no">PRJ</span>
+        <div class="hw-body">
+          <h4><span data-lang="zh">期末数据分析报告（2–3 人小组）</span><span data-lang="en">Final Report (2–3 per group)</span></h4>
+          <p><span data-lang="zh">自选数据集与研究问题，走完完整挖掘流程，提交代码、8–12 页报告与 15 分钟汇报，并附每人贡献说明。</span><span data-lang="en">Choose your dataset and question, run the full pipeline, submit code, an 8–12 page report and a 15-minute talk, plus a per-member contribution statement.</span></p>
+        </div>
+        <span class="hw-due">06-13</span>
+        <span class="hw-state state-open"><span data-lang="zh">选题中</span><span data-lang="en">Open</span></span>
+      </article>
+    </div>
+
+    <p class="more">
+      <span data-lang="zh">所有作业通过 GitHub Classroom 提交；报告与展示材料同时上传 Blackboard。组队信息须在 3 月 22 日前登记。</span>
+      <span data-lang="en">All assignments are submitted via GitHub Classroom; reports and slides also go to Blackboard. Team registration must be completed by Mar 22.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 数据集与资源 ============ -->
+<section id="resources" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">数据集与资源</span><span data-lang="en">Datasets &amp; Resources</span></h2>
+      <p class="section-sub"><span data-lang="zh">课件在每次课后更新</span><span data-lang="en">Slides are updated after each lecture</span></p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h4><span data-lang="zh">课程讲义（按周）</span><span data-lang="en">Lecture Slides (by week)</span></h4>
+        <p><span data-lang="zh">教学大纲与第 1–16 周 PDF 课件，含算法伪代码与课堂推导。</span><span data-lang="en">Syllabus and weekly PDF slides, including pseudocode and in-class derivations.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs405-syllabus.pdf">教学大纲</a>
+          <a href="../assets/files/courses/cs405-week01-08.pdf">第 1–8 周</a>
+          <a href="../assets/files/courses/cs405-week09-16.pdf">第 9–16 周</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">课程数据集</span><span data-lang="en">Course Datasets</span></h4>
+        <p><span data-lang="zh">12 个可选数据集（交易、社交网络、评分、日志等），含字段说明与使用许可提示。</span><span data-lang="en">Twelve datasets (transactions, social graphs, ratings, logs) with field descriptions and licensing notes.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs405-datasets.zip">打包下载</a>
+          <a href="../assets/files/courses/cs405-dataset-guide.pdf">数据集说明</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">代码示例</span><span data-lang="en">Code &amp; Notebooks</span></h4>
+        <p><span data-lang="zh">课堂演示 Notebook：Apriori、FP-Growth、K-means、DBSCAN、社区发现、矩阵分解。</span><span data-lang="en">Class notebooks: Apriori, FP-Growth, K-means, DBSCAN, community detection, matrix factorization.</span></p>
+        <div class="pub-links">
+          <a href="https://github.com/YOUR_ID/cs405-2027spring">GitHub 仓库</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">实验环境说明</span><span data-lang="en">Environment Setup</span></h4>
+        <p><span data-lang="zh">Python 3.10 + pandas + scikit-learn + NetworkX 安装指引与 <code>check_env.py</code> 自检脚本。</span><span data-lang="en">Installation guide for Python 3.10 + pandas + scikit-learn + NetworkX, with a <code>check_env.py</code> self-check script.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs405-setup.pdf">安装指引</a>
+          <a href="../assets/files/courses/check_env.py">check_env.py</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">教材与参考书</span><span data-lang="en">Textbooks</span></h4>
+        <p><span data-lang="zh">Han &amp; Kamber《数据挖掘：概念与技术》（主教材）；Leskovec《Mining of Massive Datasets》、Aggarwal《Data Mining》（参考）。</span><span data-lang="en">Han &amp; Kamber, Data Mining: Concepts and Techniques (primary); Leskovec MMD and Aggarwal Data Mining (references).</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs405-reading-list.pdf">阅读清单</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">报告模板与往年范文</span><span data-lang="en">Report Template &amp; Samples</span></h4>
+        <p><span data-lang="zh">8–12 页分析报告 LaTeX / Word 模板、评分细则与往届优秀报告。</span><span data-lang="en">LaTeX / Word templates for the 8–12 page report, the grading rubric and outstanding past reports.</span></p>
+        <div class="pub-links">
+          <a href="../assets/files/courses/cs405-report-template.zip">模板</a>
+          <a href="../assets/files/courses/cs405-sample-reports.pdf">优秀范文</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程政策 ============ -->
+<section id="policies" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"><span data-lang="zh">课程政策</span><span data-lang="en">Course Policies</span></h2>
+    </div>
+
+    <div class="cards cards-2">
+      <article class="card">
+        <h4><span data-lang="zh">迟交与补交</span><span data-lang="en">Late Submission</span></h4>
+        <p><span data-lang="zh">每迟交一天扣 10%，最多接受 3 天。期末报告不接受迟交（涉及答辩排期）。因病假、赛事等特殊情况，请凭证明在截止前申请延期。</span><span data-lang="en">10% deducted per late day, up to 3 days. The final report cannot be late (defense scheduling). For illness or official events, request an extension before the deadline with documentation.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">学术诚信</span><span data-lang="en">Academic Integrity</span></h4>
+        <p><span data-lang="zh">允许讨论思路，代码与报告必须独立完成。直接复制他人作业或公开仓库代码而未标注，本次作业记 0 分并按学校规定处理。引用他人数据集、代码或图表必须明确标注来源。</span><span data-lang="en">Discussing ideas is fine; code and reports must be your own. Copying others' work or public repo code without attribution results in a zero and a report per university rules. Cite all external datasets, code and figures.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">生成式 AI 使用规定</span><span data-lang="en">Generative AI Policy</span></h4>
+        <p><span data-lang="zh">允许使用 AI 辅助调试、润色英文表达与解释概念，但分析与结论必须源自你自己的实验。凡使用过 AI 工具，须在报告末尾「AI 使用声明」中说明用途与提示词。未声明而发现使用的，按学术诚信条款处理。</span><span data-lang="en">You may use AI for debugging, polishing English and explaining concepts, but analysis and conclusions must come from your own experiments. Any use must be declared in the report's "AI usage statement" with purpose and prompts. Undeclared use falls under the academic integrity clause.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">小组合作与分工</span><span data-lang="en">Teamwork</span></h4>
+        <p><span data-lang="zh">期末项目 2–3 人一组，须提交每人贡献说明；组内互评会作为个人项目分的调整系数（0.8–1.2）。成员长期失联可申请组内调整，需在中期检查前提出。</span><span data-lang="en">Projects are done in teams of 2–3 with a per-member contribution statement; peer evaluation scales individual project scores (0.8–1.2). Persistent non-participation can be reported for team adjustment before the mid-project check-in.</span></p>
+      </article>
+
+      <article class="card">
+        <h4><span data-lang="zh">考勤与成绩申诉</span><span data-lang="en">Attendance &amp; Appeals</span></h4>
+        <p><span data-lang="zh">无故缺勤超过总课时 1/3 取消考试资格；请假需提前邮件告知助教。对成绩有异议，请在公布后 7 天内邮件提出，我会逐题复核。</span><span data-lang="en">Missing over one third of classes without reason disqualifies you from the exam; email the TA in advance to request leave. Grade appeals must be raised by email within 7 days of release; I will re-check item by item.</span></p>
+      </article>
+    </div>
+
+    <h3 class="sub-title"><span data-lang="zh">教学团队</span><span data-lang="en">Teaching Team</span></h3>
+    <div class="team">
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">主讲教师</span><span data-lang="en">Instructor</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">张明远 教授</span><span data-lang="en">Prof. Mingyuan Zhang</span></p>
+          <p class="team-meta">zhangmingyuan@example.edu.cn ·
+            <span data-lang="zh">信息科学楼 A512 · 周三 14:00–16:00</span>
+            <span data-lang="en">Info Science Bldg A512 · Wed 14:00–16:00</span>
+          </p>
+        </div>
+      </div>
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">助教（答疑）</span><span data-lang="en">TA (Q&amp;A)</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">陈琳 博士生</span><span data-lang="en">Lin Chen, PhD Student</span></p>
+          <p class="team-meta">chenlin@example.edu.cn ·
+            <span data-lang="zh">实验中心 307 · 周五 14:00–16:00</span>
+            <span data-lang="en">Lab Center 307 · Fri 14:00–16:00</span>
+          </p>
+        </div>
+      </div>
+      <div class="team-item">
+        <span class="team-role"><span data-lang="zh">助教（作业）</span><span data-lang="en">TA (Grading)</span></span>
+        <div>
+          <p class="team-name"><span data-lang="zh">王垚 硕士生</span><span data-lang="en">Yao Wang, Master Student</span></p>
+          <p class="team-meta">wangyao@example.edu.cn ·
+            <span data-lang="zh">作业批改与成绩录入</span>
+            <span data-lang="en">Assignment grading and grade recording</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span>
+      <span data-lang="zh">张明远 · 数据挖掘与知识发现 CS405</span>
+      <span data-lang="en">Mingyuan Zhang · CS405 Data Mining &amp; Knowledge Discovery</span>
+    </p>
+    <p class="footer-note">
+      <a href="../index.html"><span data-lang="zh">返回个人主页</span><span data-lang="en">Back to homepage</span></a>
+      · <a href="machine-learning.html"><span data-lang="zh">机器学习导论 CS301</span><span data-lang="en">Intro to ML CS301</span></a>
+      · <span data-lang="zh">最后更新：2026 年 10 月</span><span data-lang="en">Last updated: Oct 2026</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
